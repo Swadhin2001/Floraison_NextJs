@@ -33,6 +33,7 @@ function Navbar() {
         <div
      className="modal fade custom-modal"
      id="navModal"
+     tabIndex={-1}
      aria-labelledby="navModalLabel"
      aria-hidden="true"
  >
