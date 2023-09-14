@@ -18,14 +18,16 @@ import card_image5 from '@/assets/card-image.jpg'
 import card_image6 from '@/assets/card-image.jpg'
 import card_image7 from '@/assets/card-image.jpg'
 import card_image8 from '@/assets/card-image.jpg'
-import card_image9 from '@/assets/PEO-Executive.jpg'
-import card_image10 from '@/assets/HR-Manager.jpg'
-import card_image11 from '@/assets/HR-Executive–Talent-Acquisition.jpg'
-import card_image12 from '@/assets/Manager-Finance-and-Accounts.jpg'
-import card_image13 from '@/assets/Executive-Finance-and-Accounts.jpg'
-import card_image14 from '@/assets/Lead-Payroll-and-HR.jpg'
-import card_image15 from '@/assets/Internal-Audit-Executive.jpg'
+import card_image9 from '@/assets/Business-unit-head–PEO.jpg'
+import card_image10 from '@/assets/PEO-Executive.jpg'
+import card_image11 from '@/assets/HR-Manager.jpg'
+import card_image12 from '@/assets/HR-Executive–Talent-Acquisition.jpg'
+import card_image13 from '@/assets/Manager-Finance-and-Accounts.jpg'
+import card_image14 from '@/assets/Executive-Finance-and-Accounts.jpg'
+import card_image15 from '@/assets/Lead-Payroll-and-HR.jpg'
+import card_image16 from '@/assets/Internal-Audit-Executive.jpg'
 import Footer from '@/components/Footer'
+import Our_current_open_pos_card from '@/components/Our_current_open_pos_card'
 
 
 function work_with_us() {
@@ -108,7 +110,7 @@ function work_with_us() {
         </div>
 
         {/* Our Current Open Position Starts */}
-        {/* <section className="my-5 py-4">
+        <section className="my-5 py-4">
             <div className="cards-h4 text-center py-2">Our Current Open Positions</div>
             <p className="cards-p text-center mb-5">If you think you are suitable for the below positions, please write to us with a copy of your latest CV at 
                 <a href="" className="text-decoration-none"> HR@floraison.in</a></p>
@@ -116,88 +118,42 @@ function work_with_us() {
                 <div className="container-1140">
                     <div className="row mb-3 hidden-down-up">
                         <div className="col-md-6">
-                            <div className='d-flex border border-secondary custom-card-body_1'>
-                                <Image src={card_image9} alt="" className='current-open-pos-card-Image-1' style = "object-position:84% 0px;"/>
-                                <div className="india-peo-big-card-body">
-                                    <h4 className='long-card-h4 pb-3 m-0'>Business unit head – PEO</h4>
-                                    <p className='long-card-p pe-1 m-0'>Experienced professional with key responsibility to develop business and operate model for PEO – recruitment and staffing. Set up and be the head of the new business unit (BU) independently. <br/>
-                                        Strategically plan & deliver the overall BU objectives, while ensuring they are on target with management goals and directives. Responsible for driving the business development effort in accordance with the company strategy and budget. Experience in reputed staffing consulting company would be essential.</p>
-                                </div>
-                            </div>
+                            <Our_current_open_pos_card card_class = "custom-card-body_1" image = {card_image9} image_class = "current-open-pos-card-img-1"  object_position = "84% 0px" card_heading = "Business unit head – PEO" card_about = {<fragment>
+                                Experienced professional with key responsibility to develop business and operate model for PEO – recruitment and staffing. Set up and be the head of the new business unit (BU) independently. <br/>
+                                        Strategically plan & deliver the overall BU objectives, while ensuring they are on target with management goals and directives. Responsible for driving the business development effort in accordance with the company strategy and budget. Experience in reputed staffing consulting company would be essential.
+                            </fragment>}/>
                         </div>
                         <div className="col-md-6">
-                            <div className='d-flex border border-secondary custom-card-body_1'>
-                                <Image src={card_image10} alt="" className='current-open-pos-card-Image-1' style = "object-position:33% 0px;"/>
-                                <div className="india-peo-big-card-body">
-                                    <h4 className='long-card-h4 pb-3 m-0'>PEO Executive</h4>
-                                    <p className='long-card-p pe-1 m-0'>Experienced professional with hands-on experience in payroll processing in greytHR, labour compliances, onboarding & offboarding activities. Experience in reputed staffing or payroll consulting company would be essential.</p>
-                                </div>
-                            </div>
+                            <Our_current_open_pos_card card_class = "custom-card-body_1" image = {card_image10} image_class = "current-open-pos-card-img-1" object_position = "33% 0px" card_heading = "PEO Executive" card_about = "Experienced professional with hands-on experience in payroll processing in greytHR, labour compliances, onboarding & offboarding activities. Experience in reputed staffing or payroll consulting company would be essential."/>                            
                         </div>
                     </div>
                     <div className="row mb-3 hidden-down-up">
                         <div className="col-md-6">
-                            <div className='d-flex border border-secondary custom-card-body_2'>
-                                <Image src={card_image11} alt="" className=' current-open-pos-card-Image-2' style = "object-position:62% 0px;"/>
-                                <div className="india-peo-big-card-body">
-                                    <h4 className='long-card-h4 pb-1 m-0'>HR Manager</h4>
-                                    <p className='long-card-p pe-1 m-0'>Experienced professional with hands-on experience on key processes such as recruitment, employee onboarding and offboarding, employee engagements, policy initiatives, change management initiatives, talent nurturing initiatives, performance planning and implementation. Experience in mid-sized reputed staffing or service-based company would be essential.</p>
-                                </div>
-                            </div>
+                            <Our_current_open_pos_card card_class = "custom-card-body_2" image = {card_image11} image_class = "current-open-pos-card-img-2" object_position = "62% 0px" card_heading = "HR Manager" card_about = "Experienced professional with hands-on experience on key processes such as recruitment, employee onboarding and offboarding, employee engagements, policy initiatives, change management initiatives, talent nurturing initiatives, performance planning and implementation. Experience in mid-sized reputed staffing or service-based company would be essential."/>                            
                         </div>
                         <div className="col-md-6">
-                            <div className='d-flex border border-secondary custom-card-body_2'>
-                                <Image src={card_image11} alt="" className='current-open-pos-card-Image-2' style = "object-position:62% 0px;"/>
-                                <div className="india-peo-big-card-body">
-                                    <h4 className='long-card-h4 pb-3 m-0'>HR Executive – Talent Acquisition</h4>
-                                    <p className='long-card-p pe-1 m-0'>Experienced professional with hands-on experience on end-end recruitment, employee onboarding and offboarding & employee engagements. Experience in mid-sized reputed staffing or recruitment company would be essential.</p>
-                                </div>
-                            </div>
+                            <Our_current_open_pos_card card_class = "custom-card-body_2" image = {card_image12}  image_class = "current-open-pos-card-img-2" object_position = "62% 0px" card_heading = "HR Executive – Talent Acquisition" card_about = "Experienced professional with hands-on experience on end-end recruitment, employee onboarding and offboarding & employee engagements. Experience in mid-sized reputed staffing or recruitment company would be essential."/>               
                         </div>
                     </div>
                     <div className="row mb-3 hidden-down-up">
                         <div className="col-md-6">
-                            <div className='d-flex border border-secondary custom-card-body_3'>
-                                <Image src={card_image12} alt="" className='current-open-pos-card-Image-3' style = "object-position:33% 0px;"/>
-                                <div className="india-peo-big-card-body">
-                                    <h4 className='long-card-h4 pb-2 m-0'>Manager Finance & Accounts</h4>
-                                    <p className='long-card-p pe-1 m-0'>Qualified chartered accountant with around 2 years of post-qualification experience in effectively leading engagements in accounting & bookkeeping, direct & indirect tax for corporate clients. Experience in reputed mid-sized accounting firms or consulting company would be considered relevant.</p>
-                                </div>
-                            </div>
+                            <Our_current_open_pos_card card_class = "custom-card-body_3" image = {card_image13} image_class = "current-open-pos-card-img-3" object_position = "33% 0px" card_heading = "Manager Finance & Accounts" card_about = "Qualified chartered accountant with around 2 years of post-qualification experience in effectively leading engagements in accounting & bookkeeping, direct & indirect tax for corporate clients. Experience in reputed mid-sized accounting firms or consulting company would be considered relevant."/>                             
                         </div>
                         <div className="col-md-6">
-                            <div className='d-flex border border-secondary custom-card-body_3'>
-                                <Image src={card_image13} alt="" className='current-open-pos-card-Image-3' style = "object-position:38% 0px;"/>
-                                <div className="india-peo-big-card-body">
-                                    <h4 className='long-card-h4 pb-1 m-0'>Executive Finance & Accounts</h4>
-                                    <p className='long-card-p pe-1 m-0'>Semi qualified chartered accountant with around 3+ years of experience or commerce graduate with 5+ years of experience in effectively leading engagements in accounting & bookkeeping, direct & indirect tax for corporate clients. Experience in reputed mid-sized accounting firms or consulting company would be considered relevant. Articleship completed candidates with preference for accounting & bookkeeping would also be considered.</p>
-                                </div>
-                            </div>
+                            <Our_current_open_pos_card card_class = "custom-card-body_3" image = {card_image14} image_class = "current-open-pos-card-img-3" object_position = "38% 0px" card_heading = "Executive Finance & Accounts" card_about = "Semi qualified chartered accountant with around 3+ years of experience or commerce graduate with 5+ years of experience in effectively leading engagements in accounting & bookkeeping, direct & indirect tax for corporate clients. Experience in reputed mid-sized accounting firms or consulting company would be considered relevant. Articleship completed candidates with preference for accounting & bookkeeping would also be considered."/>                                                        
                         </div>
                     </div>
                     <div className="row mb-3 hidden-down-up">
                         <div className="col-md-6">
-                            <div className='d-flex border border-secondary custom-card-body_3'>
-                                <Image src={card_image14} alt="" className='current-open-pos-card-Image-3' style = "object-position:19% 0px;"/>
-                                <div className="india-peo-big-card-body">
-                                    <h4 className='long-card-h4 pb-3 m-0'>Lead - Payroll & HR</h4>
-                                    <p className='long-card-p pe-1 m-0'>Experienced professional with experienced of managing client servicing activities related to end-to-end processing of error free payroll, employee benefits, employee reimbursement, employee tax planning and implementation, withholding tax management, setting up employee help desk and resolving employee queries, handling labour compliances – Profession Tax, Provident Fund and ESI matters.</p>
-                                </div>
-                            </div>
+                            <Our_current_open_pos_card card_class = "custom-card-body_3" image = {card_image15} image_class = "current-open-pos-card-img-3" object_position = "19% 0px" card_heading = "Lead - Payroll & HR" card_about = "Experienced professional with experienced of managing client servicing activities related to end-to-end processing of error free payroll, employee benefits, employee reimbursement, employee tax planning and implementation, withholding tax management, setting up employee help desk and resolving employee queries, handling labour compliances – Profession Tax, Provident Fund and ESI matters."/>                                                       
                         </div>
                         <div className="col-md-6">
-                            <div className='d-flex border border-secondary custom-card-body_3'>
-                                <Image src={card_image15} alt="" className='current-open-pos-card-Image-3' style = "object-position:60% 0px;"/>
-                                <div className="india-peo-big-card-body">
-                                    <h4 className='long-card-h4 pb-3 m-0'>Internal Audit Executive</h4>
-                                    <p className='long-card-p pe-1 m-0'>Execute activities related to internal audit, management audit, assurance services, due diligence, and limited reviews. Independent review of books of accounts, review of closing books of accounts each month, reconciling and managing accounts payable, accounts receivable, Interco and other accounts prepare & finalize monthly financial statements and other MIS reports, present the same to clients and participate in discussions and calls.</p>
-                                </div>
-                            </div>
+                            <Our_current_open_pos_card card_class = "custom-card-body_3" image = {card_image16} image_class = "current-open-pos-card-img-3" object_position = "60% 0px" card_heading = "Internal Audit Executive" card_about = "Execute activities related to internal audit, management audit, assurance services, due diligence, and limited reviews. Independent review of books of accounts, review of closing books of accounts each month, reconciling and managing accounts payable, accounts receivable, Interco and other accounts prepare & finalize monthly financial statements and other MIS reports, present the same to clients and participate in discussions and calls."/>                  
                         </div>
                     </div>
                 </div>
             </div>
-        </section> */}
+        </section>
 
         <Footer/>
     </>

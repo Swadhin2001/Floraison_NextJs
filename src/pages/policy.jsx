@@ -1,11 +1,15 @@
 import Footer from '@/components/Footer'
+import Navbar from '@/components/Navbar'
 import Link from 'next/link'
 import React from 'react'
+import {motion} from 'framer-motion'
 
 function privacy_policy() {
   return (
     <>
-      <div>
+    <Navbar/>
+      <motion.div initial = {{opacity: 0, y: -20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1}}>
             <div className="d-flex justify-content-center">
                 <div className="container-1140 my-5 privacy-pol-padding hidden-up-down
                 ">
@@ -49,7 +53,7 @@ function privacy_policy() {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
         <Footer/>
     </>
   )

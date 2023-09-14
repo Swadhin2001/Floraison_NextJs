@@ -1,10 +1,14 @@
 import Footer from '@/components/Footer'
+import Navbar from '@/components/Navbar'
 import React from 'react'
+import {motion} from 'framer-motion'
 
 function Disclaimer() {
   return (
     <>
-      <div>
+    <Navbar/>
+      <motion.div initial = {{opacity: 0, y: -20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1 }}>
         <div className="d-flex justify-content-center hidden-up-down">
             <div className="container-1140 my-5 disclaimer-padding">
                 <h2 className="pb-4 privacy-pol-h2">Disclaimer</h2>
@@ -29,7 +33,7 @@ function Disclaimer() {
                 </div>
             </div>
         </div>
-    </div>
+    </motion.div>
     <Footer/>
     </>
   )

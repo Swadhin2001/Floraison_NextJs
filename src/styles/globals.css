@@ -242,7 +242,7 @@
   font-size: 24px;
   line-height: 32px;
 }
-.blue-card-p{
+.blue-card-about{
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -383,7 +383,7 @@
 }
 .india-peo-small-card{
   width: auto;
-  height:298px !important;
+  min-height:298px;
 }
 .india-peo-big-card-body{
   padding: 12px 0px 0px 12px;
@@ -393,7 +393,7 @@
 }
 .india-subsidiary-cards{
   width: auto; 
-  height: 480px !important;
+  min-height: 485px;
 }
 .our-execution-hero-banner{
   background-image: url(../assets/our-execution-header-banner.jpg);
@@ -414,23 +414,23 @@
   width: 212px;
 }
 .benifit-floraison-card-1{
-  width: 226px !important; 
-  height: 212px !important;
+  width: 226px ; 
+  min-height: 230px ;
 }
 .benifit-floraison-card-2{
-  width: 226px !important; 
-  height: 236px !important;
+  width: 226px ; 
+  min-height: 236px ;
 }
 .small-business-card{
   width: auto;
-  height: 524px !important;
+  min-height: 528px ;
 }
 .subsidiadry-support-hero-banner{
   background-position: 0px -80px;
 }
 .subsidiary-support-card{
   width: auto; 
-  height: 480px !important;
+  min-height: 484px;
 }
 .current-open-pos-card-img-1 {
   height: 310px;
@@ -552,4 +552,151 @@
 .modal-header{
   border: none !important;
   height: 0px !important;
+}
+
+
+/* Responsiveness */
+@media only screen and (max-width: 600px) {
+  body {
+      overflow-x: hidden;
+  }
+  .row-odd {
+      flex-direction: column-reverse;
+  }
+  .black-cards-mobile{
+      position: static !important;
+  }
+  .explore-suits-cards{
+      width: auto;
+      height: auto;
+      margin: 10px;
+  }
+  .box-images{
+      width: 100%;
+      height: auto;
+  }
+  .right-image-about, .left-image-about{
+      padding: 0px 10px 0px 10px;
+  }
+  .right-image-about{
+      padding: 0px;
+  }
+  .box-img-heading{
+      font-size: 24px;
+      line-height: 1.5em;
+  }
+  .black-cards{
+      text-align: center;
+      padding: 0px;
+      margin: 0px;
+      width: auto;
+      top: 410px;
+  }
+  .body-mobile{
+      margin-top: 400px !important;
+  }
+  .blue-card-left{
+      background-color:  #1E4C9E !important;
+      padding-left: 25px;
+  }
+  .blue-card-right{
+      background-color:  #315BA8 !important;
+      padding-right: 25px;
+  }
+  .card{
+      margin: 10px;
+      width: auto;
+  }
+  .small-black-cards{
+      width: auto;
+  }
+  .container-844 {
+      padding: 10px;
+      margin: 0px 20px 0px 20px;
+  }
+  .box-image-h4{
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 36px;
+  }
+  .custom-card-body{
+      flex-direction: column;
+      text-align: center;
+      width: auto;
+  }
+  .custom-card-img{
+      width: auto;
+  }
+  .custom-card-body{
+      margin: 10px;
+  }
+  .custom-button-right{
+      margin: auto;
+  }
+  .custom-card-body_1, .custom-card-body_2, .custom-card-body_3{
+      flex-direction: column;
+      text-align: center;
+      width: auto;
+      height: auto;
+      margin: 10px;
+  }
+  .current-open-pos-card-img-1, .current-open-pos-card-img-2, .current-open-pos-card-img-3{
+      width: auto;
+  }
+  .e-brocure-card{
+      flex-direction: column;
+      padding: 10px;
+  }
+  .e-brochures-img{
+      padding: 10px;
+      width: 100%;
+      height: 100%;
+  }
+  .card-padding{
+      padding: 0px !important;
+  }
+  .mobile-padding-contact-us{
+      padding: 20px !important;
+      width: auto !important;
+      margin: 0px !important;
+  }
+  .container-900, .container-925, .container-944, .container-404, .container-800, .container-786, .container-1140, .container-1200, .container-1300{
+      overflow-x: hidden;
+  }
+  .modal-form-body{
+      width: auto !important;
+      height: auto !important;
+  }
+  .form-input{
+      width: 300px !important;
+  }
+  .form-padding{
+      padding: 50px 50px 50px 50px;
+  }
+  .form-heading{
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 35px;
+  }
+  .form-heading-about{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+  }
+  .form-p{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+  }
+  .send-btn{
+      width: 300px !important;
+      height: auto !important;
+      font-size: 15px !important;
+      font-weight: 700 !important;
+      line-height: 15px !important;
+  }
+  .modal-header{
+      border: none !important;
+      height: 0px !important;
+  }
 }

@@ -18,11 +18,12 @@ import card_image3 from '@/assets/Physical-Office-Setup.jpg'
 import card_image4 from '@/assets/Accounting-Payroll-Setup.jpg'
 import card_image5 from '@/assets/Tax-Compliance-Setup.jpg'
 import card_image6 from '@/assets/Human-Resource-Setup.jpg'
+import  {motion} from 'framer-motion'
 
 function india_subsidiary() {
   return (
     <>
-        <Herosection banner = {banner}/> 
+        <Herosection banner = {banner} india_subsidiary_active_submenu = "active-submenu"/> 
         {/* Home Page Body */}
         <div className="my-5 pt-5 body-mobile">
             <div className="text-center mb-5 hidden-up-down">
@@ -73,9 +74,10 @@ function india_subsidiary() {
         </div>
         {/* Cards */}
         <div className="my-5">
-            <div className="text-center">
+            <motion.div className="text-center" initial = {{opacity: 0, y: -20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1}}>
                 <h4 className="cards-h4">Our Subsidiary Setup Services</h4>
-            </div>
+            </motion.div>
             <div className="d-flex justify-content-center p-0 mb-5">
                 <div className="container-925">
                     <div className="row mt-3 hidden-down-up">

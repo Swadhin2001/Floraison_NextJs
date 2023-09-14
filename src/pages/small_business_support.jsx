@@ -22,12 +22,13 @@ import card_image8 from '@/assets/Compilation-Reviews-and-Reporting.jpg'
 import card_image9 from '@/assets/Annual-Audit-Tax-and-Other-Filings.jpg'
 import Small_business_owners_card from '@/components/Small_business_owners_card'
 import Footer from '@/components/Footer'
+import {motion} from 'framer-motion'
 
 function small_business_support() {
   return (
     <>
         <Navbar/>
-        <Herosection banner = {banner}/> 
+        <Herosection banner = {banner} small_business_support_active_submenu = "active-submenu"/> 
         {/* Body Scetion */}
         <div className="my-5 py-5 body-mobile">
             <div className="text-center mb-5 hidden-up-down">
@@ -49,98 +50,123 @@ function small_business_support() {
         </div>
         {/* Business & Sectors that are ideally suited for our services Starts */}
         <div className="my-5 ">
-            <div className="text-center">
+            <motion.div className="text-center" initial = {{opacity: 0, y: -20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1 }}>
                 <h4 className="cards-h4 pb-3">Business & Sectors that are ideally suited for our services</h4>
-            </div>
+            </motion.div>
             <div className="d-flex justify-content-center">
                 <div className="container-800">
                     <div className="row g-0">
-                        <div className="col-md-4 ">
+                        <motion.div className="col-md-4 " initial = {{opacity: 0, y: 20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1 , delay: 0.2}}>
                             <p className="text-white small-black-cards">Information Technology</p>
-                        </div>
-                        <div className="col-md-4 ">
+                        </motion.div>
+                        <motion.div className="col-md-4 " initial = {{opacity: 0, y: 20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1 , delay: 0.3}}>
                             <p className="text-white small-black-cards">Healthcare & Pharma firms</p>
-                        </div>
-                        <div className="col-md-4 ">
+                        </motion.div>
+                        <motion.div className="col-md-4 " initial = {{opacity: 0, y: 20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1 , delay: 0.4}}>
                             <p className="text-white small-black-cards">E-Commerce firms</p>
-                        </div>
+                        </motion.div>
                     </div>
                     <div className="row g-0">
-                        <div className="col-md-4 ">
+                        <motion.div className="col-md-4 " initial = {{opacity: 0, y: 20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1 , delay: 0.5}}>
                             <p className="text-white small-black-cards">Software firms</p>
-                        </div>
-                        <div className="col-md-4 ">
+                        </motion.div>
+                        <motion.div className="col-md-4 " initial = {{opacity: 0, y: 20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1 , delay: 0.6}}>
                             <p className="text-white small-black-cards">Educational Institutions</p>
-                        </div>
-                        <div className="col-md-4 ">
+                        </motion.div>
+                        <motion.div className="col-md-4 " initial = {{opacity: 0, y: 20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1 , delay: 0.7}}>
                             <p className="text-white small-black-cards">E-tailers</p>
-                        </div>
+                        </motion.div>
                     </div>
                     <div className="row g-0">
-                        <div className="col-md-4 ">
+                        <motion.div className="col-md-4 " initial = {{opacity: 0, y: 20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1 , delay: 0.8}}>
                             <p className="text-white small-black-cards">Research & Development firms</p>
-                        </div>
-                        <div className="col-md-4 ">
+                        </motion.div>
+                        <motion.div className="col-md-4 " initial = {{opacity: 0, y: 20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1 , delay: 0.9}}>
                             <p className="text-white small-black-cards">Self Employed Professionals</p>
-                        </div>
-                        <div className="col-md-4 ">
+                        </motion.div>
+                        <motion.div className="col-md-4 " initial = {{opacity: 0, y: 20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1 , delay: 1}}>
                             <p className="text-white small-black-cards">B2B Suppliers</p>
-                        </div>
+                        </motion.div>
                     </div>
                     <div className="row g-0">
-                        <div className="col-md-4 ">
+                        <motion.div className="col-md-4 "initial = {{opacity: 0, y: 20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1 , delay: 1.1}}>
                             <p className="text-white small-black-cards">Engineering firms</p>
-                        </div>
-                        <div className="col-md-4 ">
+                        </motion.div>
+                        <motion.div className="col-md-4 "initial = {{opacity: 0, y: 20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1 , delay: 1.2}}>
                             <p className="text-white small-black-cards">Food & Beverage Industry</p>
-                        </div>
-                        <div className="col-md-4 ">
+                        </motion.div>
+                        <motion.div className="col-md-4 " initial = {{opacity: 0, y: 20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1 , delay: 1.3}}>
                             <p className="text-white small-black-cards">Independent Service Providers</p>
-                        </div>
+                        </motion.div>
                     </div>
                     <div className="row g-0">
-                        <div className="col-md-4 ">
+                        <motion.div className="col-md-4 " initial = {{opacity: 0, y: 20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1 , delay: 1.4}}>
                             <p className="text-white small-black-cards">Retailers & Distributors</p>
-                        </div>
-                        <div className="col-md-4 ">
+                        </motion.div>
+                        <motion.div className="col-md-4 " initial = {{opacity: 0, y: 20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1 , delay: 1.5}}>
                             <p className="text-white small-black-cards">Logistics Service Providers</p>
-                        </div>
-                        <div className="col-md-4 ">
+                        </motion.div>
+                        <motion.div className="col-md-4 "initial = {{opacity: 0, y: 20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1 , delay: 1.6}}>
                             <p className="text-white small-black-cards">Management Consultants</p>
-                        </div>
+                        </motion.div>
                     </div>
                     <div className="row g-0">
-                        <div className="col-md-4 ">
+                        <motion.div className="col-md-4 " initial = {{opacity: 0, y: 20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1 , delay: 1.7}}>
                             <p className="text-white small-black-cards">Manufacturers & OEM&apos;s</p>
-                        </div>
-                        <div className="col-md-4 ">
+                        </motion.div>
+                        <motion.div className="col-md-4 " initial = {{opacity: 0, y: 20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1 , delay: 1.8}}>
                             <p className="text-white small-black-cards">Travel & Tourism firms</p>
-                        </div>
-                        <div className="col-md-4 ">
+                        </motion.div>
+                        <motion.div className="col-md-4 " initial = {{opacity: 0, y: 20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1 , delay: 1.9}}>
                             <p className="text-white small-black-cards">Website Designers & Developers</p>
-                        </div>
+                        </motion.div>
                     </div>
                     <div className="row g-0">
-                        <div className="col-md-4 ">
+                        <motion.div className="col-md-4 " initial = {{opacity: 0, y: 20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1 , delay: 2}}>
                             <p className="text-white small-black-cards">Assemblers & Subcontractors</p>
-                        </div>
-                        <div className="col-md-4 ">
+                        </motion.div>
+                        <motion.div className="col-md-4 " initial = {{opacity: 0, y: 20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1 , delay: 2.1}}>
                             <p className="text-white small-black-cards">Entertainment & Media</p>
-                        </div>
-                        <div className="col-md-4 ">
+                        </motion.div>
+                        <motion.div className="col-md-4 " initial = {{opacity: 0, y: 20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1 , delay: 2.2}}>
                             <p className="text-white small-black-cards">Property owners & lessors</p>
-                        </div>
+                        </motion.div>
                     </div>
                     <div className="row g-0">
-                        <div className="col-md-4 ">
+                        <motion.div className="col-md-4 " initial = {{opacity: 0, y: 20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1 , delay: 2.3}}>
                             <p className="text-white small-black-cards">Small Scale Industries</p>
-                        </div>
-                        <div className="col-md-4 ">
+                        </motion.div>
+                        <motion.div className="col-md-4 " initial = {{opacity: 0, y: 20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1 , delay: 2.4}}>
                             <p className="text-white small-black-cards">Advertising & Publicity agencies</p>
-                        </div>
-                        <div className="col-md-4 ">
+                        </motion.div>
+                        <motion.div className="col-md-4 " initial = {{opacity: 0, y: 20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1 , delay: 2.5}}>
                             <p className="text-white small-black-cards"></p>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </div>
@@ -148,9 +174,10 @@ function small_business_support() {
 
         {/* Benefit from the Floraison Advantage Starts */}
         <div className="my-5 pt-5">
-            <div className="text-center">
+            <motion.div className="text-center" initial = {{opacity: 0, y: -20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1 }}>
                 <h4 className="cards-h4 pb-3">Benefit from the Floraison Advantage</h4>
-            </div>
+            </motion.div>
             <div className="d-flex justify-content-center">
                 <div className="container-1140">
                     <div className="row">

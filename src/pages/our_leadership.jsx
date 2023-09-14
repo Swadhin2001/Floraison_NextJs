@@ -25,6 +25,7 @@ import card_image13 from '@/assets/vruti-mehta.jpg'
 import card_image14 from '@/assets/kavya-m.jpg'
 import Our_client_service_team from '@/components/Our_client_service_team'
 import Footer from '@/components/Footer'
+import {motion} from 'framer-motion'
 
 
 
@@ -96,35 +97,43 @@ function our_leadership() {
             <div className="d-flex justify-content-center p-0 mb-5">
                 <div className="container-925">
                     <div className="row mt-3 hidden-down-up">
-                        <div className="col-md-4">
+                        <motion.div className="col-md-4" initial = {{opacity: 0, y: 20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1 , delay: 0.5}}>
                             <Our_client_service_team image = {card_image7} card_heading = "CA Goutham Kini" card_about = "Manager Finance & Accounts"/>
-                        </div>
-                        <div className="col-md-4">
+                        </motion.div>
+                        <motion.div className="col-md-4" initial = {{opacity: 0, y: 20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1 , delay: 0.7}}>
                             <Our_client_service_team image = {card_image8} card_heading = "CA Prakyath S" card_about = "Manager Finance & Accounts"/>                            
-                        </div>
-                        <div className="col-md-4">
+                        </motion.div>
+                        <motion.div className="col-md-4" initial = {{opacity: 0, y: 20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1 , delay: 0.9}}>
                             <Our_client_service_team image = {card_image9} card_heading = "CS Neha Sancheti" card_about = "Manager Corporate & Regulatory"/>                           
-                        </div>
+                        </motion.div>
                     </div>
                     <div className="row mt-4 mb-4 hidden-down-up" >
-                        <div className="col-md-4">
+                        <motion.div className="col-md-4" initial = {{opacity: 0, y: 20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1 , delay: 1.1}}>
                             <Our_client_service_team image = {card_image10} card_heading = "Bharathesh M" card_about = "Manager Finance & Accounts"/>                            
-                        </div>
-                        <div className="col-md-4">
+                        </motion.div>
+                        <motion.div className="col-md-4" initial = {{opacity: 0, y: 20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1 , delay: 1.3}}>
                             <Our_client_service_team image = {card_image11} card_heading = "Murali J" card_about = "Manager Finance & PEO"/>                           
-                        </div>
-                        <div className="col-md-4">
+                        </motion.div>
+                        <motion.div className="col-md-4" initial = {{opacity: 0, y: 20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1 , delay: 1.5}}>
                             <Our_client_service_team image = {card_image12} card_heading = "Vinay DT" card_about = "Manager Finance & Accounts"/>                           
                             
-                        </div>
+                        </motion.div>
                     </div>
                     <div className="row mt-4 mb-4 d-flex justify-content-center hidden-down-up">
-                        <div className="col-md-4">
+                        <motion.div className="col-md-4" initial = {{opacity: 0, y: 20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1 , delay: 1.7}}>
                             <Our_client_service_team image = {card_image13} card_heading = "CA Vruti Mehta" card_about = "Consultant"/>                       
-                        </div>
-                        <div className="col-md-4">
+                        </motion.div>
+                        <motion.div className="col-md-4" initial = {{opacity: 0, y: 20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1 , delay: 1.9}}>
                             <Our_client_service_team image = {card_image14} card_heading = "Kavya M" card_about = "Manager Human Resources"/>                             
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </div>

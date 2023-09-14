@@ -5,10 +5,13 @@ import Image from 'next/image'
 import Footer from '@/components/Footer'
 import map from "@/assets/map.jpg"
 import 'bootstrap/dist/css/bootstrap.css'
+import {motion} from 'framer-motion'
+import Navbar from '@/components/Navbar'
 
 function contact_us() {
   return (
     <>
+        <Navbar/>
       <Herosection banner = {banner}/>
       {/* Body Section */}
       <div className="my-5 py-5 body-mobile">
@@ -18,7 +21,8 @@ function contact_us() {
         <div className="d-flex justify-content-center hidden-up-down">
             <div className="container-1140">
                 <div className="row">
-                    <div className="col-md-6">
+                    <motion.div className="col-md-6" initial = {{opacity: 0, y: -20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1, delay: 0.5 }}>
                         <div className="mobile-padding-contact-us">
                             <form>
                                 <div className="mb-3">
@@ -62,8 +66,9 @@ function contact_us() {
                                 <button type="submit" className="btn btn-dark rounded-0">Get in Touch</button>
                             </form>
                         </div>
-                    </div>
-                    <div className="col-md-6 mt-4 mobile-padding-contact-us">
+                    </motion.div>
+                    <motion.div className="col-md-6 mt-4 mobile-padding-contact-us" initial = {{opacity: 0, y: -20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1, delay: 0.8 }}>
                         <Image src={map} alt=""/>
                         <p className="blue-card-p text-center px-5 py-4">For any corporate or support inquiries or if you would like to know more about Floraison, please write to us at:</p>
                         <div className="bg-black">
@@ -77,7 +82,7 @@ function contact_us() {
                                 Email: start@floraison.in 
                             </p>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </div>

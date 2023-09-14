@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import 'bootstrap/dist/css/bootstrap.css'
+import {motion} from 'framer-motion'
 
 function Lower_footer() {
   return (
@@ -8,7 +9,8 @@ function Lower_footer() {
       <div className="bg-black lower-footer ">
             <div className="container-1200">
                 <div className="row p-4 hidden-down-up">
-                    <div className="col-md-4 text-white mx-4 px-4 ">
+                    <motion.div className="col-md-4 text-white mx-4 px-4 " initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}>
                         <h4 className="text-white footer-h4 pb-2">Contact Us</h4>
                         <p className="text-white footer-links">
                             <strong>Floraison India Strategic Consulting Pvt Ltd</strong>
@@ -25,8 +27,9 @@ function Lower_footer() {
                             <br />
                             Email: start@floraison.in
                         </p>
-                    </div>
-                    <div className="col-md-2 text-white mx-4 px-4">
+                    </motion.div>
+                    <motion.div className="col-md-2 text-white mx-4 px-4" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}>
                         <h4 className="text-white footer-h4 pb-2">Our Services</h4>
                         <div className="d-flex flex-column footer-links">
                             <Link href="/india_entry_strategies" className="text-decoration-none text-white py-1">India Entry Strategies</Link>
@@ -35,8 +38,9 @@ function Lower_footer() {
                             <Link href="/india_peo_services" className="text-decoration-none text-white py-1">India PEO Services</Link>
                             <Link href="/small_business_support" className="text-decoration-none text-white py-1">Small Business Support</Link>
                         </div>
-                    </div>
-                    <div className="col-md-2 text-white mx-4 px-4">
+                    </motion.div>
+                    <motion.div className="col-md-2 text-white mx-4 px-4" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}>
                         <h4 className="text-white footer-h4 pb-2">About Us</h4>
                         <div className="d-flex flex-column footer-links">
                             <Link href="/our_company" className="text-decoration-none text-white py-1">Our Company</Link>
@@ -45,8 +49,9 @@ function Lower_footer() {
                             <Link href="/our_local_expertise" className="text-decoration-none text-white py-1">Local Expertise</Link>
                             <Link href="/work_with_us" className="text-decoration-none text-white py-1">Work With Us</Link>
                         </div>
-                    </div>
-                    <div className="col-md-2 text-white mx-4 px-4">
+                    </motion.div>
+                    <motion.div className="col-md-2 text-white mx-4 px-4" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}>
                         <h4 className="text-white footer-h4 pb-2">Others</h4>
                         <div className="d-flex flex-column footer-links">
                             <Link href="/resources_center" className="text-decoration-none text-white py-1">Resource Center</Link>
@@ -54,7 +59,7 @@ function Lower_footer() {
                             <Link href="/policy" className="text-decoration-none text-white py-1">Privacy Policy</Link>
                             <Link href="/disclaimer" className="text-decoration-none text-white py-1">Disclaimer</Link>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
             <p className="text-white mx-4 px-4 footer-links my-0 py-0">Copyright (c) 2023 Floraison India Strategic Consulting Pvt Ltd, Bangalore, India. All Rights Reserved.</p>

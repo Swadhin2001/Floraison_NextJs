@@ -1,8 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
 import logo from '@/assets/floraison-logo.svg'
-import 'bootstrap/dist/css/bootstrap.css';
-import Link from 'next/link';
+import 'bootstrap/dist/css/bootstrap.css'
+import Link from 'next/link'
+
 
 function Navbar() {
   return (

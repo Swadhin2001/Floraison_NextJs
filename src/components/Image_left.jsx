@@ -1,10 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
-
+import {motion} from 'framer-motion'
 
 function Image_left(props) {
   return (
-    <div>
+    <motion.div initial = {{opacity: 0, y: -20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1}}>
       <div className="d-flex justify-content-center hidden-up-down">
             <div className="container-1200">
                 <div className="row g-0">
@@ -20,7 +21,7 @@ function Image_left(props) {
                 </div>
             </div>
         </div>
-    </div>
+    </motion.div>
   )
 }
 

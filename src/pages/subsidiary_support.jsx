@@ -20,12 +20,14 @@ import card_image6 from '@/assets/Consolidation-Reviews-Reporting.jpg'
 import card_image7 from '@/assets/Virtual-CFO-Services.jpg'
 import card_image8 from '@/assets/Annual-Audit-Tax-Other-Filings.jpg'
 import card_image9 from '@/assets/Business-Support-Services.jpg'
+import Footer from '@/components/Footer'
+import {motion} from 'framer-motion'
 
 function subsidiary_support() {
   return (
     <>
         <Navbar/>
-        <Herosection banner = {banner} banner_class = "subsidiadry-support-hero-banner"/> 
+        <Herosection banner = {banner} banner_class = "subsidiadry-support-hero-banner" subsidiary_active_submenu = "active-submenu"/> 
         {/* Body Section */}
         <div className="my-5 pt-5 body-mobile">
             <div className="text-center mb-5 hidden-up-down">
@@ -50,9 +52,10 @@ function subsidiary_support() {
 
         {/* Card Section */}
         <section className="my-5 pt-5">
-            <div className="text-center hidden-up-down">
+            <motion.div className="text-center hidden-up-down" initial = {{opacity: 0, y: -20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1}}>
                 <h4 className="cards-h4">Our Subsidiary Support Services</h4>
-            </div>
+            </motion.div>
             <div className="d-flex justify-content-center p-0 mb-5">
                 <div className="container-925">
                     <div className="row mt-3 hidden-down-up">
@@ -99,6 +102,7 @@ function subsidiary_support() {
                 </div>
             </div>
         </section>
+        <Footer/>
     </>
   )
 }

@@ -13,15 +13,16 @@ import image6 from '@/assets/India-Subsidiary-OR-India-PEO.jpg'
 import image7 from '@/assets/Is-it-possible-to-convert-from-one-option-to-the-other.jpg'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
+import {motion} from 'framer-motion'
 
 function india_entry_strategies() {
   return (
     <>
       <Navbar/>
-      <Herosection banner={banner} />
+      <Herosection banner={banner} india_entry_strat_active_submenu = "active-submenu"/>
       {/* Box Image Right and Left */}
         <div className="my-5 pt-5 body-mobile">
-            <div className="text-center mb-5 hidden-up-down" >
+            <div className="text-center mb-5  " >
                 <h2 className="box-img-heading m-0">India Entry Strategies</h2>
                 <p className="box-img-about">One purpose. Multiple options</p>
             </div>
@@ -44,9 +45,10 @@ function india_entry_strategies() {
             <div className="d-flex justify-content-center india-entry-strat-blue-cards" >
                 <div className="container-1200">
                     <div className="row g-0">
-                        <div className="col-md-6 blue-card-left hidden-up-down px-5">
+                        <motion.div className="col-md-6 blue-card-left px-5" initial = {{opacity: 0, y: -20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1}}>
                             <h4 className="text-white text-center blue-card-h4 pb-4">India Subsidiary</h4>
-                            <div className="text-white blue-card-p">
+                            <div className="text-white blue-card-about">
                                 Traditionally, global expansion meant setting up Joint Ventures. Post liberalization in India in 1991, setting up an ‘India’ Subsidiary in the form of Private Limited Company became a new normal. An ‘India’ subsidiary is a duly formed legal entity in India that is controlled by the foreign parent company through ownership of between 51% to 100% of the equity share capital of the India subsidiary. The India subsidiary company works as per the laws of India and is considered as a domestic company for all purposes
                                 <br/>
                                 <br/>
@@ -65,10 +67,11 @@ function india_entry_strategies() {
                                     Know more
                                 </Link>
                             </div>
-                        </div>
-                        <div className="col-md-6 blue-card-right hidden-down-up px-5">
+                        </motion.div>
+                        <motion.div className="col-md-6 blue-card-right  ps-5" initial = {{opacity: 0, y: 20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1}}>
                             <h4 className="text-white text-center pb-4">India PEO</h4>
-                            <div className="text-white">
+                            <div className="text-white blue-card-about">
                                 Professional Employer Organisation (PEO) is fast emerging as the preferred option for several global entities. Topmost reasons being for its simplicity & flexibility. A professional employer organisation is a company that partners with small to medium-sized businesses on B2B basis to provide comprehensive HR services, such as payroll processing, benefits administration, regulatory compliance, tax filings, staff recruiting & training, & more; while the client continues to control its operations & employee functions.
                                 <br/>
                                 <br/>
@@ -89,7 +92,7 @@ function india_entry_strategies() {
                                 <br/>
                                 <br/>
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </div>

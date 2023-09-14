@@ -18,6 +18,7 @@ import card_image3 from '@/assets/Subsidiary-Support.jpg'
 import card_image4 from '@/assets/India-PEO-Services.jpg'
 import card_image5 from '@/assets/Small-Business-Support.jpg'
 import Link from 'next/link'
+import {motion} from 'framer-motion'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -28,7 +29,7 @@ export default function Home() {
       <Herosection banner={banner} />
       {/* Body Scetion */}
       <section className="my-5 pt-5 body-mobile">
-        <div className="text-center mb-5 hidden-up-down">
+        <div className="text-center mb-5 ">
           <h2 className="box-img-heading m-0 ">Your Gateway to India</h2>
           <p className="box-img-about">Expand your global business and enter the Indian markets NOW!</p>
         </div>
@@ -37,17 +38,18 @@ export default function Home() {
       </section>
       {/* Explore our service suite */}
       <div className="my-5">
-        <div className="text-center">
+        <motion.div className="text-center" initial = {{opacity: 0, y: -20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1}}>
           <h4 className="cards-h4">Explore our Service Suite</h4>
           <p className="cards-p">
             Share your plans with us and help us customise a workable strategy for your effective entry into India.
             <br />
             Go beyond your current needs and experience our holistic range of services tailored for you
           </p>
-        </div>
+        </motion.div>
         <div className="d-flex justify-content-center p-0 my-5 ">
           <div className="container-900">
-            <div className="row hidden-down-up">
+            <div className="row ">
               <div className="col-md-4">
                 <Home_card card_image={card_image1} card_heading="India Entry Strategies" card_about="It’s our mission to promote and formulate the entry of global organizations into the Indian markets through well thought out & structured strategies which include India Subsidiary & India PEO options" />
               </div>
@@ -109,7 +111,8 @@ export default function Home() {
                                 </Link>
         </fragment>} />
       </div>
-
+          {/* Horizontal Slide Section */}
+          
       <Footer />
     </>
   )

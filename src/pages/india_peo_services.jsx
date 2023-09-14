@@ -11,13 +11,16 @@ import image3 from '@/assets/Engage-the-best-talents-from-India-without-any-barr
 import image4 from '@/assets/What-is-PEO.jpg'
 import card_image from '@/assets/card-image.jpg'
 import Image_left from '@/components/Image_left'
-import Footer from '@/components/Footer';
+import Footer from '@/components/Footer'
+import {motion} from 'framer-motion'
+import Navbar from '@/components/Navbar';
 
 
 function india_peo_services() {
   return (
-    <>
-        <Herosection banner = {banner}/>
+    <>  
+        <Navbar/>
+        <Herosection banner = {banner} india_peo_service_active_submenu = "active-submenu"/>
         {/* Home Page Body */}
         <div className="my-5 pt-5 body-mobile">
             <div className="text-center mb-5 hidden-up-down">
@@ -35,30 +38,37 @@ function india_peo_services() {
 
         {/* Small Cards Section */}
         <div className="my-5 pt-4">
-            <div className="cards-h4 text-center my-4">Evaluate if PEO is the most suitable option <br/>
-                for your India expansion plans!</div>
+            <motion.div className="cards-h4 text-center my-4" initial = {{opacity: 0, y: -20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1}}>Evaluate if PEO is the most suitable option <br/>
+                for your India expansion plans!</motion.div>
             <div className="d-flex justify-content-center">
                 <div className="container-1140">
                     <div className="row hidden-down-up">
-                        <div className="col-md-3">
+                        <motion.div className="col-md-3" initial = {{opacity: 0, y: 20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1 , delay: 0.5}}>
                             <India_peo_small_cards card_heading = "Test water first before committing to expansion" card_about = "Do not make the cardinal sin of jumping into a foreign territory without knowing it well enough. With our India PEO, you can gain access to India, with no risks or commitments & begin to hire employees & get them to work for you exclusively without a legal entity"/>
-                        </div>
-                        <div className="col-md-3">
+                        </motion.div>
+                        <motion.div className="col-md-3" initial = {{opacity: 0, y: 20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1 , delay: 0.8}}>
                             <India_peo_small_cards card_heading = "Make and know your expansion plans" card_about = "What are the reasons for your India expansion? Objectives? Duration? Manpower requirements? Budget? Can you afford to delay your hiring in India? Answers to these critical questions can help you evaluate if PEO is the best option to begin your global expansion to India"/>
-                        </div>
-                        <div className="col-md-3">
+                        </motion.div>
+                        
+                        <motion.div className="col-md-3" initial = {{opacity: 0, y: 20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1 , delay: 1.1}}>
                             <India_peo_small_cards card_heading = "Manage India employees of an acquired company" card_about = "If you have acquired a company in your country or globally that has a legal presence and employees in India and you do not want to continue operating the legal entity in India for obvious reasons, signing up a PEO arrangement with us could be the best option for you"/>                        
-                        </div>
-                        <div className="col-md-3">
+                        </motion.div>
+                        <motion.div className="col-md-3" initial = {{opacity: 0, y: 20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1 , delay: 1.4}}>
                             <India_peo_small_cards card_heading = "Get India presence without committing" card_about = "Having a PEO presence in India and having employees hired and working exclusively for you can give you great visibility for business connection in India. You can opt to convert to subsidiary when you are ready for full- fledged legal presence"/> 
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </div>
         </div>
         {/* Big Cards Section */}
         <div className="my-5 pt-4">
-            <div className="cards-h4 text-center my-4">If you were looking for one good reason to engage <br/> our unique PEO services, here are ten.</div>
+            <motion.div className="cards-h4 text-center my-4" initial = {{opacity: 0, y: -20}} whileInView={{opacity: 1, y : 0}} 
+    transition={{ duration: 1}}>If you were looking for one good reason to engage <br/> our unique PEO services, here are ten.</motion.div>
             <div className="d-flex justify-content-center">
                 <div className="container-1140">
                     <div className="row mb-3 hidden-down-up">
