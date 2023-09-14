@@ -17,6 +17,7 @@ import card_image2 from '@/assets/India-Subsidiary.jpg'
 import card_image3 from '@/assets/Subsidiary-Support.jpg'
 import card_image4 from '@/assets/India-PEO-Services.jpg'
 import card_image5 from '@/assets/Small-Business-Support.jpg'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -75,37 +76,37 @@ export default function Home() {
       {/* Image Left Right Section */}
       <div className="my-5 pb-5">
         <Image_left image={image3} image_heading="Finding perfect growth story for our global and domestic clients" image_about={<fragment>
-          Floraison is a strategic and business consulting company founded in 2002 and is based out of Bangalore, India. Since our inception, we have helped more than 300 global companies to create successful businesses in India under our India Entry Strategies and have nurtured the aspirations of more than 200 domestic entrepreneurs with our Small Business Support. <br /><br /><a href="/" className="text-decoration-none text-black">
+          Floraison is a strategic and business consulting company founded in 2002 and is based out of Bangalore, India. Since our inception, we have helped more than 300 global companies to create successful businesses in India under our India Entry Strategies and have nurtured the aspirations of more than 200 domestic entrepreneurs with our Small Business Support. <br /><br /><Link href="/" className="text-decoration-none text-black">
             <i className="fa fa-angle-double-right color-black" aria-hidden="true"></i> &nbsp;
             Know more about us
-          </a>
+          </Link>
         </fragment>} />
         <Image_right image={image4} image_heading="Benefit from our visionary leadership and astute planning" image_about={<fragment>
           We share a common vision to constantly influence, lead & simplify the way our global & domestic clients  setup and do their business in India. For us, every client engagement is unique and needs careful & smart planning. We lead every engagement with a sense of purpose, responsibility and ownership, to help you achieve your objectives and goals.
                                 <br/>
                                 <br/>
-                                <a href="/" className="text-decoration-none text-black">
+                                <Link href="/" className="text-decoration-none text-black">
                                     <i className="fa fa-angle-double-right color-black" aria-hidden="true"></i> &nbsp;
                                     Meet our leadership team
-                                </a>
+                                </Link>
         </fragment>} />
         <Image_left image={image5} image_heading="Each engagement is managed by single point of contact " image_about={<fragment>
           We have dedicated in-house experts in each of our service offering and they all work together in focussed groups. We always start by analysing a client engagement from several points of view. This multidisciplinary approach is a major benefit for our clients as they get the best of expertise & experience. A customised team is created for large or complex engagement and this team is led by a single point of contact.
                                 <br/>
                                 <br/>
-                                <a href="/" className="text-decoration-none text-black">
+                                <Link href="/" className="text-decoration-none text-black">
                                     <i className="fa fa-angle-double-right color-black" aria-hidden="true"></i> &nbsp;
                                     See how we do this
-                                </a>
+                                </Link>
         </fragment>} />
         <Image_right image={image6} image_heading="Our unmatched experience and local expertise will guide you throughout" image_about={<fragment>
           India is a diverse country and to many it represents a sub-continent – many nations rolled into one! Our several man years of combined local experience and expertise will help you navigate through various complex situations and put you on the definite path of success in the Indian market.
                                 <br/>
                                 <br/>
-                                <a href="/" className="text-decoration-none text-black">
+                                <Link href="/" className="text-decoration-none text-black">
                                     <i className="fa fa-angle-double-right color-black" aria-hidden="true"></i> &nbsp;
                                     Learn how this benefits you
-                                </a>
+                                </Link>
         </fragment>} />
       </div>
 

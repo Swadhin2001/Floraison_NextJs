@@ -12,6 +12,7 @@ import image5 from '@/assets/Indias-political-cultural-and-social-demography-may
 import image6 from '@/assets/India-Subsidiary-OR-India-PEO.jpg'
 import image7 from '@/assets/Is-it-possible-to-convert-from-one-option-to-the-other.jpg'
 import Footer from '@/components/Footer'
+import Link from 'next/link'
 
 function india_entry_strategies() {
   return (
@@ -59,10 +60,10 @@ function india_entry_strategies() {
                                 </ol>
                                 <br/>
                                 <br/>
-                                <a href="/" className="text-decoration-none text-white">
+                                <Link href="/" className="text-decoration-none text-white">
                                     <i className="fa fa-angle-double-right color-black" aria-hidden="true"></i>
                                     Know more
-                                </a>
+                                </Link>
                             </div>
                         </div>
                         <div className="col-md-6 blue-card-right hidden-down-up px-5">
@@ -81,10 +82,10 @@ function india_entry_strategies() {
                                 </ol>
                                 <br/>
                                 <br/>
-                                <a href="/" className="text-decoration-none text-white">
+                                <Link href="/" className="text-decoration-none text-white">
                                     <i className="fa fa-angle-double-right color-black" aria-hidden="true"></i>
                                     Know more
-                                </a>
+                                </Link>
                                 <br/>
                                 <br/>
                             </div>

@@ -400,7 +400,7 @@
 }
 .leadership-team-card{
   width: auto;
-  height: 414px !important;
+  min-height: 419px;
 }
 .leadership-team-card-img{
   height:210px;

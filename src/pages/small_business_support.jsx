@@ -111,7 +111,7 @@ function small_business_support() {
                     </div>
                     <div className="row g-0">
                         <div className="col-md-4 ">
-                            <p className="text-white small-black-cards">Manufacturers & OEM's</p>
+                            <p className="text-white small-black-cards">Manufacturers & OEM&apos;s</p>
                         </div>
                         <div className="col-md-4 ">
                             <p className="text-white small-black-cards">Travel & Tourism firms</p>

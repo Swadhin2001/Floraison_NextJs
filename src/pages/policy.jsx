@@ -1,4 +1,5 @@
 import Footer from '@/components/Footer'
+import Link from 'next/link'
 import React from 'react'
 
 function privacy_policy() {
@@ -37,7 +38,7 @@ function privacy_policy() {
                             <br/>
                             <br/>
                             By email :
-                            <a href="/" className="text-decoration-none"> Start@floraison.in</a>
+                            <Link href="/" className="text-decoration-none"> Start@floraison.in</Link>
                             <br/>
                             <br/>
                             By Phone: +91 80 26538257 / 58 / 59
