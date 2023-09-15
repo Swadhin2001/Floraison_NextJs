@@ -29,7 +29,7 @@ function subsidiary_support() {
         <Navbar/>
         <Herosection banner = {banner} banner_class = "subsidiadry-support-hero-banner" subsidiary_active_submenu = "active-submenu"/> 
         {/* Body Section */}
-        <div className="my-5 pt-5 body-mobile">
+        <div className="body">
             <div className="text-center mb-5 hidden-up-down">
                 <h2 className="box-img-heading m-0">Subsidiary Support</h2>
                 <p className="box-img-about">Experience our reliable, honest and professional ongoing support services</p>

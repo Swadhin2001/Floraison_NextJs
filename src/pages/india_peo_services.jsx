@@ -22,7 +22,7 @@ function india_peo_services() {
         <Navbar/>
         <Herosection banner = {banner} india_peo_service_active_submenu = "active-submenu"/>
         {/* Home Page Body */}
-        <div className="my-5 pt-5 body-mobile">
+        <div className="body">
             <div className="text-center mb-5 hidden-up-down">
                 <h2 className="box-img-heading m-0">India PEO</h2>
                 <p className="box-img-about">Engage the best talents from India, without any barriers</p>

@@ -30,7 +30,7 @@ function small_business_support() {
         <Navbar/>
         <Herosection banner = {banner} small_business_support_active_submenu = "active-submenu"/> 
         {/* Body Scetion */}
-        <div className="my-5 py-5 body-mobile">
+        <div className="body">
             <div className="text-center mb-5 hidden-up-down">
                 <h2 className="box-img-heading m-0">Small Business Support</h2>
                 <p className="box-img-about">Providing support you need for long term viability of your business</p>

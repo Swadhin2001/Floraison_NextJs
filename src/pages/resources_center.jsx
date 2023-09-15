@@ -13,7 +13,7 @@ function resources_center() {
       <Navbar/>
       <Herosection banner = {banner}/>
       {/* Body Starts*/}
-        <div className="my-5 py-4 body-mobile">
+        <div className="body">
             <motion.div className="text-center mb-5 " initial = {{opacity: 0, y: -20}} whileInView={{opacity: 1, y : 0}} 
     transition={{ duration: 1 }}>
                 <h2 className="box-img-heading m-0">Our Resource Center</h2>

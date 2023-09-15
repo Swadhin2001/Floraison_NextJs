@@ -21,7 +21,7 @@ function india_entry_strategies() {
       <Navbar/>
       <Herosection banner={banner} india_entry_strat_active_submenu = "active-submenu"/>
       {/* Box Image Right and Left */}
-        <div className="my-5 pt-5 body-mobile">
+        <div className="body">
             <div className="text-center mb-5  " >
                 <h2 className="box-img-heading m-0">India Entry Strategies</h2>
                 <p className="box-img-about">One purpose. Multiple options</p>
@@ -62,7 +62,7 @@ function india_entry_strategies() {
                                 </ol>
                                 <br/>
                                 <br/>
-                                <Link href="/" className="text-decoration-none text-white">
+                                <Link href="/india_subsidiary" className="text-decoration-none text-white">
                                     <i className="fa fa-angle-double-right color-black" aria-hidden="true"></i>
                                     Know more
                                 </Link>
@@ -85,7 +85,7 @@ function india_entry_strategies() {
                                 </ol>
                                 <br/>
                                 <br/>
-                                <Link href="/" className="text-decoration-none text-white">
+                                <Link href="/india_peo_services" className="text-decoration-none text-white">
                                     <i className="fa fa-angle-double-right color-black" aria-hidden="true"></i>
                                     Know more
                                 </Link>

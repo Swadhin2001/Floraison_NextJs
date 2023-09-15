@@ -35,7 +35,7 @@ function our_leadership() {
         <Navbar/>
         <Herosection banner = {banner}/> 
         {/* Body Section */}
-        <div className="my-5 py-5 body-mobile">
+        <div className="body">
             <div className="text-center mb-5 hidden-up-down">
                 <h2 className="box-img-heading m-0">Our Leadership Team</h2>
                 <p className="box-img-about">Turning Vision into Value</p>

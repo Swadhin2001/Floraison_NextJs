@@ -10,6 +10,7 @@ import image3 from '@/assets/Open-communication-and-transparency-are-our-key-dif
 import image4 from '@/assets/Integrated-service-model-with-flexible-pricing.jpg'
 import image5 from '@/assets/Touching-lives-of-several-of-our-employees.jpg'
 import Footer from '@/components/Footer'
+import Our_clientele_slider from '@/components/Our_clientele_slider'
 
 function our_company() {
   return (
@@ -17,7 +18,7 @@ function our_company() {
       <Navbar/>
       <Herosection banner = {banner}/>
       {/* Body Section */}
-      <div className="our-company-body body-mobile">
+      <div className="our-company-body body">
             <div className="text-center mb-5 hidden-up-down">
                 <h2 className="box-img-heading m-0">About Floraison India</h2>
                 <p className="box-img-about">Accelerating growth for our clients and employees is what drives us</p>
@@ -38,7 +39,14 @@ function our_company() {
 
             <Image_right image = {image5} image_heading = "Touching lives of several of our employees" image_about = "We have touched the lives of several employees who have worked with us over the years, by nurturing professional aspirations, knowledge fostering & enabling their career progression. We have always aspired to create a ‘Happy’ organisation for our employees. This gives us a sense of fulfilment & great satisfaction."/>
       </div>
-      <h2>Slider Section is pending</h2>
+      
+      {/* Our Clientele Section */}
+      <div className="mb-5 py-4">
+          <h4 className="text-center horizontal-slide-h4 m-0">Our Clientele</h4>
+          <div className="d-flex justify-content-center mb-4">
+            <Our_clientele_slider/>
+          </div>
+      </div>
       <Footer/>
     </>
   )

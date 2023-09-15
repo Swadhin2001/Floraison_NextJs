@@ -35,7 +35,7 @@ function work_with_us() {
     <>
         <Navbar/>
         <Herosection banner = {banner}/> 
-        <div className="my-5 pt-5 body-mobile">
+        <div className="body">
             <div className="text-center mb-5 hidden-up-down">
                 <h2 className="box-Image-heading m-0">Work with us</h2>
                 <p className="box-Image-about">Alone we can do so little, together we can do so much.</p>

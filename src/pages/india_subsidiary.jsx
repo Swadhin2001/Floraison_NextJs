@@ -19,13 +19,15 @@ import card_image4 from '@/assets/Accounting-Payroll-Setup.jpg'
 import card_image5 from '@/assets/Tax-Compliance-Setup.jpg'
 import card_image6 from '@/assets/Human-Resource-Setup.jpg'
 import  {motion} from 'framer-motion'
+import Navbar from '@/components/Navbar'
 
 function india_subsidiary() {
   return (
-    <>
+    <>  
+    <Navbar/>
         <Herosection banner = {banner} india_subsidiary_active_submenu = "active-submenu"/> 
         {/* Home Page Body */}
-        <div className="my-5 pt-5 body-mobile">
+        <div className="body">
             <div className="text-center mb-5 hidden-up-down">
                 <h2 className="box-img-heading m-0">India Subsidiary</h2>
                 <p className="box-img-about">Establish your India legal entity with speed, agility and precision</p>

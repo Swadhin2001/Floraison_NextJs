@@ -17,7 +17,7 @@ function our_local_expertise() {
     <Navbar/>
       <Herosection banner = {banner}/>
       {/* Body Scetion */}
-        <div className="my-5 py-5 body-mobile">
+        <div className="body">
             <div className="text-center mb-5 hidden-up-down">
                 <h2 className="box-img-heading m-0">Our Local Expertise</h2>
                 <p className="box-img-about">Global companies can leverage on our local expertise & experience & benefit immensely</p>

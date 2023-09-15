@@ -16,7 +16,7 @@ function our_execution() {
     <div>
       <Navbar/>
       <Herosection banner={banner} />
-      <section className="my-5 pt-4 pb-4 body-mobile">
+      <section className="body">
             <div className="text-center mb-5 hidden-up-down">
                 <h2 className="box-img-heading m-0">Our Premium Execution</h2>
                 <p className="box-img-about">Our people and the strength they bring to support, are the true reasons for our success</p>
