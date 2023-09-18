@@ -113,10 +113,10 @@ export default function Home() {
         </fragment>} />
       </div>
           {/* Horizontal Slide Section */}
-          <div className="mb-5 pb-4">
+          <div className="mb-5 pb-5">
             <h4 className="text-center horizontal-slide-h4 m-0 pb-5">Download our ePublications</h4>
-            <div className="d-flex justify-content-center mb-4">
-              <Home_slider/>
+            <div className='custom-carousel-item'>
+               <Home_slider/>
             </div>
           </div>
       <Footer />

@@ -1,12 +1,11 @@
-import Link from 'next/link';
 import React from 'react'
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
+import Carousel from 'react-multi-carousel'
+import 'react-multi-carousel/lib/styles.css'
+import Link from 'next/link'
+import Image from 'next/image'
 import image1 from '@/assets/Floraison-India-Entry-Strategies-India-Subsidiary-border-new.jpg'
 import image2 from '@/assets/Floraison-India-Entry-Strategies-India-PEO-border-new.jpg'
 import image3 from '@/assets/Floraison-Small-Business-Support-border-new.jpg'
-import image4 from '@/assets/Floraison-India-Entry-Strategies-India-Subsidiary-border-new.jpg'
-import Image from 'next/image';
 
 
 function Home_slider() {
@@ -20,39 +19,43 @@ function Home_slider() {
           items: 4
         },
         tablet: {
-          breakpoint: { max: 1024, min: 800 },
+          breakpoint: { max: 1024, min: 424 },
           items: 2
         },
         mobile: {
-          breakpoint: { max: 800, min: 600 },
+          breakpoint: { max: 424, min: 0 },
           items: 1
         }
       };
   return (
-    <div>
-        <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={2000} transitionDuration={500} className='container-900'>
+    <>
+        <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={2000} transitionDuration={500} className='container-900' >
             <div>
-                <Link href="./resource-center.html">
-                    <Image src={image1} alt="" class="index-horizontal-slide"/>
+                <Link href= '/resources_center'>
+                    <Image src = {image1} className='index-horizontal-slide' alt=''/>
                 </Link>
             </div>
+            
             <div>
-                <Link href="./resource-center.html">
-                    <Image src={image2} alt="" class="index-horizontal-slide"/>
-                </Link>                
+                <Link href= '/resources_center'>
+                    <Image src = {image2} className='index-horizontal-slide' alt=''/>
+                </Link>
             </div>
+            
             <div>
-                <Link href="./resource-center.html">
-                    <Image src={image3} alt="" class="index-horizontal-slide"/>
-                </Link>                                
+                <Link href= '/resources_center'>
+                    <Image src = {image3} className='index-horizontal-slide' alt=''/>
+                </Link>
             </div>
+            
             <div>
-                <Link href="./resource-center.html">
-                    <Image src={image4} alt="" class="index-horizontal-slide"/>
-                </Link>                                
+                <Link href= '/resources_center'>
+                    <Image src = {image1} className='index-horizontal-slide' alt=''/>
+                </Link>
             </div>
+            
         </Carousel>
-    </div>
+    </>
   )
 }
 

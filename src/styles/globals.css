@@ -12,6 +12,10 @@
   margin-top: 4.8rem;
   margin-bottom: 5rem;
 }
+.custom-carousel-item{
+  display: flex;
+  justify-content: center;
+}
 .container-1200{
   max-width: 1200px;
 }
@@ -19,7 +23,7 @@
   max-width: 1140px;
 }
 .container-900{
-  max-width: 900px;
+  width: 900px;
 }
 .container-925{
   max-width: 925px;
