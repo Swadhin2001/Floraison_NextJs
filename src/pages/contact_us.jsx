@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react'
+import React from 'react'
+import Head from 'next/head'
 import Herosection from '@/components/Herosection'
 import banner from '@/assets/contact-us-header.jpg'
 import Image from 'next/image'
@@ -9,11 +10,12 @@ import {motion} from 'framer-motion'
 import Navbar from '@/components/Navbar'
 
 function contact_us() {
-    useEffect (()=>{
-        document.title = "Contact Us - Floraison"
-    }, []);
   return (
     <>
+     <Head>
+      <title>Contact Us - Floraison</title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    </Head>
         <Navbar/>
       <Herosection banner = {banner}/>
       {/* Body Section */}

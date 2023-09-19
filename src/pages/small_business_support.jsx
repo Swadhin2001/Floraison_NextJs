@@ -1,6 +1,7 @@
 import Herosection from '@/components/Herosection'
 import Navbar from '@/components/Navbar'
-import React, { useEffect } from 'react'
+import React from 'react'
+import Head from 'next/head'
 import banner from '@/assets/small-business-support-banner.jpg'
 import Image_right from '@/components/Image_right'
 import Image_left from '@/components/Image_left'
@@ -25,11 +26,12 @@ import Footer from '@/components/Footer'
 import {motion} from 'framer-motion'
 
 function small_business_support() {
-    useEffect (()=>{
-        document.title = "Small Business Support - Floraison"
-    },[]);
   return (
     <>
+        <Head>
+        <title>Small Business Support - Floraison</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        </Head>
         <Navbar/>
         <Herosection banner = {banner} small_business_support_active_submenu = "active-submenu"/> 
         {/* Body Scetion */}

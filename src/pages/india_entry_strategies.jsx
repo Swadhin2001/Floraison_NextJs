@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react'
+import React from 'react'
+import Head from 'next/head'
 import Navbar from '@/components/Navbar'
 import Herosection from '@/components/Herosection'
 import Image_left from '@/components/Image_left'
@@ -16,11 +17,12 @@ import Link from 'next/link'
 import {motion} from 'framer-motion'
 
 function india_entry_strategies() {
-    useEffect (()=>{
-        document.title = "India Entry Strategies - Floraison"
-    },[]);
   return (
     <>
+    <Head>
+      <title>India Entry Strategies - Floraison</title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    </Head>
       <Navbar/>
       <Herosection banner={banner} india_entry_strat_active_submenu = "active-submenu"/>
       {/* Box Image Right and Left */}

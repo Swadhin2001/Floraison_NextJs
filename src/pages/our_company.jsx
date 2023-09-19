@@ -1,6 +1,7 @@
 import Herosection from '@/components/Herosection'
 import Navbar from '@/components/Navbar'
-import React, { useEffect } from 'react'
+import React from 'react'
+import Head from 'next/head'
 import banner from "@/assets/our-company-banner.jpg"
 import Image_left from '@/components/Image_left'
 import Image_right from '@/components/Image_right'
@@ -13,11 +14,12 @@ import Footer from '@/components/Footer'
 import Our_clientele_slider from '@/components/Our_clientele_slider'
 
 function our_company() {
-  useEffect (()=>{
-    document.title = "Our Company - Floraison"
-  },[]);
   return (
     <>
+    <Head>
+      <title>Our Company - Floraison</title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    </Head>
       <Navbar/>
       <Herosection banner = {banner}/>
       {/* Body Section */}

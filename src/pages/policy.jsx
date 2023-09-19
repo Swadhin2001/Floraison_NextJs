@@ -1,15 +1,17 @@
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import Link from 'next/link'
-import React, { useEffect } from 'react'
+import React from 'react'
+import Head from 'next/head'
 import {motion} from 'framer-motion'
 
 function privacy_policy() {
-  useEffect (()=>{
-    document.title = "Privacy Policy - Floraison"
-  },[]);
   return (
     <>
+    <Head>
+      <title>Privacy Policy - Floraison</title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    </Head>
     <Navbar/>
       <motion.div initial = {{opacity: 0, y: -20}} whileInView={{opacity: 1, y : 0}} 
     transition={{ duration: 1}}>

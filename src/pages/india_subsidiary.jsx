@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react'
+import React from 'react'
+import Head from 'next/head'
 import Herosection from '@/components/Herosection'
 import banner from '@/assets/india-entry-strategies-banner.jpg' 
 import Image_right from '@/components/Image_right'
@@ -22,11 +23,12 @@ import  {motion} from 'framer-motion'
 import Navbar from '@/components/Navbar'
 
 function india_subsidiary() {
-    useEffect (()=>{
-        document.title = "India Subsidiary - Floraison"
-    },[]);
   return (
     <>  
+    <Head>
+      <title>India Subsidiary - Floraison</title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    </Head>
     <Navbar/>
         <Herosection banner = {banner} india_subsidiary_active_submenu = "active-submenu"/> 
         {/* Home Page Body */}

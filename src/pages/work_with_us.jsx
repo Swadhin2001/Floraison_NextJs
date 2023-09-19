@@ -1,6 +1,7 @@
 import Herosection from '@/components/Herosection'
 import Navbar from '@/components/Navbar'
-import React, { useEffect } from 'react'
+import React from 'react'
+import Head from 'next/head'
 import banner from '@/assets/work-with-us-banner.jpg'
 import Image from 'next/image'
 import Image_left from '@/components/Image_left'
@@ -31,11 +32,12 @@ import Our_current_open_pos_card from '@/components/Our_current_open_pos_card'
 
 
 function work_with_us() {
-    useEffect (()=>{
-        document.title = "Work With Us - Floraison"
-    },[]);
   return (
     <>
+        <Head>
+        <title>Work With Us - Floraison</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        </Head>
         <Navbar/>
         <Herosection banner = {banner}/> 
         <div className="body">

@@ -1,14 +1,16 @@
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
-import React, { useEffect } from 'react'
+import React from 'react'
+import Head from 'next/head'
 import {motion} from 'framer-motion'
 
 function Disclaimer() {
-  useEffect (()=>{
-    document.title = "Disclaimer - Floraison"
-  },[]);
   return (
     <>
+    <Head>
+      <title>Disclaimer - Floraison</title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    </Head>
     <Navbar/>
       <motion.div initial = {{opacity: 0, y: -20}} whileInView={{opacity: 1, y : 0}} 
     transition={{ duration: 1 }}>

@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react'
+import React from 'react'
+import Head from 'next/head'
 import Navbar from '@/components/Navbar'
 import Herosection from '@/components/Herosection'
 import banner from '@/assets/our-execution-header-banner.jpg'
@@ -12,11 +13,12 @@ import image5 from '@/assets/Personalised-support-and-realistic-expectation.jpg'
 import Footer from '@/components/Footer'
 
 function our_execution() {
-  useEffect (()=>{
-    document.title = "Our Execution - Floraison"
-  },[]);
   return (
-    <div>
+    <>
+    <Head>
+      <title>Our Execution - Floraison</title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    </Head>
       <Navbar/>
       <Herosection banner={banner} />
       <section className="body">
@@ -36,7 +38,7 @@ function our_execution() {
 
         </section>
         <Footer/>
-    </div>
+    </>
   )
 }
 
