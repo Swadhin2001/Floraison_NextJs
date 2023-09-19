@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 function Upper_footer() {
   return (
@@ -8,9 +9,9 @@ function Upper_footer() {
             <h4 className="text-white pb-3 upper-footer-h4">
                 start@floraison.in
             </h4>
-            <a href="./contact-us.html">
+            <Link href="/contact_us">
                 <button className="footer-button">Contact Us</button>
-            </a>
+            </Link>
         </div>
     </div>
   )
