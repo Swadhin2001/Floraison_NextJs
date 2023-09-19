@@ -1,5 +1,5 @@
 import Herosection from '@/components/Herosection'
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navbar from '@/components/Navbar'
 import banner from '@/assets/local-expertise-banner.jpg'
 import Image_right from '@/components/Image_right'
@@ -12,6 +12,9 @@ import image4 from '@/assets/There-is-a-local-way-of-doing-things.jpg'
 import image5 from '@/assets/Local-familiarity-feel-knowledge-expertise-and-experience-is-simply-a-must-have.jpg'
 
 function our_local_expertise() {
+  useEffect (()=>{
+    document.title = "Our Local Expertise - Floraison"
+  },);
   return (
     <>
     <Navbar/>

@@ -20,7 +20,7 @@ function Home_slider() {
         },
         tablet: {
           breakpoint: { max: 1024, min: 424 },
-          items: 2
+          items: 1
         },
         mobile: {
           breakpoint: { max: 424, min: 0 },

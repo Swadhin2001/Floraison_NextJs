@@ -1,6 +1,6 @@
 import Herosection from '@/components/Herosection'
 import Navbar from '@/components/Navbar'
-import React from 'react'
+import React, { useEffect } from 'react'
 import banner from '@/assets/small-business-support-banner.jpg'
 import Image_right from '@/components/Image_right'
 import Image_left from '@/components/Image_left'
@@ -25,6 +25,9 @@ import Footer from '@/components/Footer'
 import {motion} from 'framer-motion'
 
 function small_business_support() {
+    useEffect (()=>{
+        document.title = "Small Business Support - Floraison"
+    },[]);
   return (
     <>
         <Navbar/>

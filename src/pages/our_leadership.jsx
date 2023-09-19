@@ -1,6 +1,6 @@
 import Herosection from '@/components/Herosection'
 import Navbar from '@/components/Navbar'
-import React from 'react'
+import React, { useEffect } from 'react'
 import banner from '@/assets/our-leadership-header-banner.jpg'
 import Image_left from '@/components/Image_left'
 import Image_right from '@/components/Image_right'
@@ -30,6 +30,9 @@ import {motion} from 'framer-motion'
 
 
 function our_leadership() {
+    useEffect (()=>{
+        document.title = "Our Leadership - Floraison"
+    },[]);
   return (
     <>
         <Navbar/>

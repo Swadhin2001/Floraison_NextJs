@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navbar from '@/components/Navbar'
 import Herosection from '@/components/Herosection'
 import banner from '@/assets/our-execution-header-banner.jpg'
@@ -12,6 +12,9 @@ import image5 from '@/assets/Personalised-support-and-realistic-expectation.jpg'
 import Footer from '@/components/Footer'
 
 function our_execution() {
+  useEffect (()=>{
+    document.title = "Our Execution - Floraison"
+  },[]);
   return (
     <div>
       <Navbar/>

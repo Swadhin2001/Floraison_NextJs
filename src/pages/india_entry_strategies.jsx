@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navbar from '@/components/Navbar'
 import Herosection from '@/components/Herosection'
 import Image_left from '@/components/Image_left'
@@ -16,6 +16,9 @@ import Link from 'next/link'
 import {motion} from 'framer-motion'
 
 function india_entry_strategies() {
+    useEffect (()=>{
+        document.title = "India Entry Strategies - Floraison"
+    },[]);
   return (
     <>
       <Navbar/>
@@ -64,7 +67,7 @@ function india_entry_strategies() {
                                 <br/>
                                 <Link href="/india_subsidiary" className="text-decoration-none text-white">
                                     <i className="fa fa-angle-double-right color-black" aria-hidden="true"></i>
-                                    Know more
+                                    &nbsp;Know more
                                 </Link>
                             </div>
                         </motion.div>
@@ -87,7 +90,7 @@ function india_entry_strategies() {
                                 <br/>
                                 <Link href="/india_peo_services" className="text-decoration-none text-white">
                                     <i className="fa fa-angle-double-right color-black" aria-hidden="true"></i>
-                                    Know more
+                                    &nbsp;Know more
                                 </Link>
                                 <br/>
                                 <br/>

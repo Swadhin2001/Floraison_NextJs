@@ -1,6 +1,6 @@
 import Herosection from '@/components/Herosection'
 import Navbar from '@/components/Navbar'
-import React from 'react'
+import React, { useEffect } from 'react'
 import banner from '@/assets/subsidiary-support-banner.jpg'
 import Image_right from '@/components/Image_right'
 import Image_left from '@/components/Image_left'
@@ -24,6 +24,9 @@ import Footer from '@/components/Footer'
 import {motion} from 'framer-motion'
 
 function subsidiary_support() {
+    useEffect (()=>{
+        document.title = "Subsidiary Support - Floraison"
+    },[]);
   return (
     <>
         <Navbar/>

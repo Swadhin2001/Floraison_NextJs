@@ -1,9 +1,12 @@
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
-import React from 'react'
+import React, { useEffect } from 'react'
 import {motion} from 'framer-motion'
 
 function Disclaimer() {
+  useEffect (()=>{
+    document.title = "Disclaimer - Floraison"
+  },[]);
   return (
     <>
     <Navbar/>

@@ -3,7 +3,7 @@ import Image_right from '@/components/Image_right'
 import India_peo_big_card from '@/components/India_peo_big_card';
 import India_peo_small_cards from '@/components/India_peo_small_cards';
 import 'bootstrap/dist/css/bootstrap.css';
-import React from 'react'
+import React, { useEffect } from 'react'
 import banner from '@/assets/india-peo-services-banner-new.jpg'
 import image1 from '@/assets/Jump-start-your-India-business-through-our-India-PEO.jpg'
 import image2 from '@/assets/PEO-simplifies-global-expansion-plan.jpg'
@@ -17,6 +17,9 @@ import Navbar from '@/components/Navbar';
 
 
 function india_peo_services() {
+    useEffect (()=>{
+        document.title = "India PEO Services - Floraison"
+    },[]);
   return (
     <>  
         <Navbar/>

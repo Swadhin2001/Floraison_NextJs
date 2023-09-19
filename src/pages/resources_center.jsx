@@ -1,6 +1,6 @@
 import Herosection from '@/components/Herosection'
 import Navbar from '@/components/Navbar'
-import React from 'react'
+import React, { useEffect } from 'react'
 import banner from '@/assets/resource-center-header.jpg'
 import Resources_card from '@/components/Resources_card'
 import card_image1 from '@/assets/Floraison-Small-Business-Support-border-new.jpg'
@@ -8,6 +8,9 @@ import Footer from '@/components/Footer'
 import {motion} from 'framer-motion'
 
 function resources_center() {
+    useEffect (()=>{
+        document.title = "Resources Center - Floraison"
+    },[]);
   return (
     <>
       <Navbar/>

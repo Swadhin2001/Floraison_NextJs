@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Herosection from '@/components/Herosection'
 import banner from '@/assets/india-entry-strategies-banner.jpg' 
 import Image_right from '@/components/Image_right'
@@ -22,6 +22,9 @@ import  {motion} from 'framer-motion'
 import Navbar from '@/components/Navbar'
 
 function india_subsidiary() {
+    useEffect (()=>{
+        document.title = "India Subsidiary - Floraison"
+    },[]);
   return (
     <>  
     <Navbar/>

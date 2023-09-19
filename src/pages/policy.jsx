@@ -1,10 +1,13 @@
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect } from 'react'
 import {motion} from 'framer-motion'
 
 function privacy_policy() {
+  useEffect (()=>{
+    document.title = "Privacy Policy - Floraison"
+  },[]);
   return (
     <>
     <Navbar/>

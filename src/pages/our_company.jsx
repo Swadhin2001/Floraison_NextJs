@@ -1,6 +1,6 @@
 import Herosection from '@/components/Herosection'
 import Navbar from '@/components/Navbar'
-import React from 'react'
+import React, { useEffect } from 'react'
 import banner from "@/assets/our-company-banner.jpg"
 import Image_left from '@/components/Image_left'
 import Image_right from '@/components/Image_right'
@@ -13,6 +13,9 @@ import Footer from '@/components/Footer'
 import Our_clientele_slider from '@/components/Our_clientele_slider'
 
 function our_company() {
+  useEffect (()=>{
+    document.title = "Our Company - Floraison"
+  },[]);
   return (
     <>
       <Navbar/>
