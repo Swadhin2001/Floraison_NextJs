@@ -29,7 +29,7 @@ function Home_slider() {
       };
   return (
     <>
-        <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={2000} transitionDuration={500} className='container-900' >
+        <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={2000} transitionDuration={500} className='custom-container-900' >
             <div>
                 <Link href= '/resources-center'>
                     <Image src = {image1} className='index-horizontal-slide' alt=''/>

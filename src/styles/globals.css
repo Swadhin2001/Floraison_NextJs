@@ -26,6 +26,9 @@
   max-width: 1140px;
 }
 .container-900{
+  max-width: 900px;
+}
+.custom-container-900{
   width: 900px;
 }
 .custom-container-1140{
@@ -683,7 +686,7 @@
       width: auto !important;
       margin: 0px !important;
   }
-  .container-900{
+  .custom-container-900{
     width: 210px;
     overflow-x: hidden;
   }
