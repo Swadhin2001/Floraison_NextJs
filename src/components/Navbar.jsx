@@ -47,13 +47,13 @@ function Navbar() {
                      aria-label="Close"
                  ></button>
                  <Link href="/index" className="text-decoration-none text-white nav-modal-a-padding nav-hover active-navbar">Home</Link>
-                 <Link href="/our_company" className="text-decoration-none text-white nav-modal-a-padding nav-hover">Our Company</Link>
-                 <Link href="/our_leadership" className="text-decoration-none text-white nav-modal-a-padding nav-hover">Our Leadership</Link>
-                 <Link href="/our_execution" className="text-decoration-none text-white nav-modal-a-padding nav-hover">Our Execution</Link>
-                 <Link href="/our_local_expertise" className="text-decoration-none text-white nav-modal-a-padding nav-hover">Local Expertise</Link>
-                 <Link href="/work_with_us" className="text-decoration-none text-white nav-modal-a-padding nav-hover">Work With Us</Link>
-                 <Link href="/resources_center" className="text-decoration-none text-white nav-modal-a-padding nav-hover">Resources Center</Link>
-                 <Link href="/contact_us" className="text-decoration-none text-white nav-modal-a-padding nav-hover">Contact Us</Link>
+                 <Link href="/our-company" className="text-decoration-none text-white nav-modal-a-padding nav-hover">Our Company</Link>
+                 <Link href="/our-leadership" className="text-decoration-none text-white nav-modal-a-padding nav-hover">Our Leadership</Link>
+                 <Link href="/our-execution" className="text-decoration-none text-white nav-modal-a-padding nav-hover">Our Execution</Link>
+                 <Link href="/our-local-expertise" className="text-decoration-none text-white nav-modal-a-padding nav-hover">Local Expertise</Link>
+                 <Link href="/work-with-us" className="text-decoration-none text-white nav-modal-a-padding nav-hover">Work With Us</Link>
+                 <Link href="/resources-center" className="text-decoration-none text-white nav-modal-a-padding nav-hover">Resources Center</Link>
+                 <Link href="/contact-us" className="text-decoration-none text-white nav-modal-a-padding nav-hover">Contact Us</Link>
              </div>
          </div>
      </div>

@@ -16,6 +16,9 @@
   display: flex;
   justify-content: center;
 }
+.custom-container-1200{
+  width: 1200px;
+}
 .container-1200{
   max-width: 1200px;
 }
@@ -24,6 +27,9 @@
 }
 .container-900{
   width: 900px;
+}
+.custom-container-1140{
+  width: 1140px;
 }
 .container-925{
   max-width: 925px;
@@ -92,6 +98,15 @@
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.upper-footer-overlay{
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .footer-button{
   width:142px;
@@ -667,6 +682,14 @@
       padding: 20px !important;
       width: auto !important;
       margin: 0px !important;
+  }
+  .container-900{
+    width: 210px;
+    overflow-x: hidden;
+  }
+  .custom-container-1140{
+    width: 180px;
+    overflow-x: hidden;
   }
   .container-900, .container-925, .container-944, .container-404, .container-800, .container-786, .container-1140, .container-1200, .container-1300{
       overflow-x: hidden;

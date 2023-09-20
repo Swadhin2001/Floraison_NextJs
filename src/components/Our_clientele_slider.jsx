@@ -49,16 +49,16 @@ function Home_slider() {
         },
         tablet: {
           breakpoint: { max: 1024, min: 600 },
-          items: 3
+          items: 1
         },
         mobile: {
           breakpoint: { max: 600, min: 0 },
-          items: 2
+          items: 1
         }
       };
   return (
     <div>
-        <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={2000} transitionDuration={500} className='container' >
+        <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={2000} transitionDuration={500} className='custom-container-1140'  removeArrowOnDeviceType={["tablet", "mobile"]} >
             <div >                
                 <Image src={image1} alt="" />                
             </div>

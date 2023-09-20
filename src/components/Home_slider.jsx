@@ -31,25 +31,25 @@ function Home_slider() {
     <>
         <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={2000} transitionDuration={500} className='container-900' >
             <div>
-                <Link href= '/resources_center'>
+                <Link href= '/resources-center'>
                     <Image src = {image1} className='index-horizontal-slide' alt=''/>
                 </Link>
             </div>
             
             <div>
-                <Link href= '/resources_center'>
+                <Link href= '/resources-center'>
                     <Image src = {image2} className='index-horizontal-slide' alt=''/>
                 </Link>
             </div>
             
             <div>
-                <Link href= '/resources_center'>
+                <Link href= '/resources-center'>
                     <Image src = {image3} className='index-horizontal-slide' alt=''/>
                 </Link>
             </div>
             
             <div>
-                <Link href= '/resources_center'>
+                <Link href= '/resources-center'>
                     <Image src = {image1} className='index-horizontal-slide' alt=''/>
                 </Link>
             </div>

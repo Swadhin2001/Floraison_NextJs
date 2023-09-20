@@ -7,9 +7,10 @@ function Lower_footer() {
   return (
     <div>
       <div className="bg-black lower-footer ">
-            <div className="container-1200">
-                <div className="row p-4 hidden-down-up">
-                    <motion.div className="col-md-4 text-white mx-4 px-4 " initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
+        <div className='d-flex justify-content-center'>
+            <div className="custom-container-1200 ">
+                <div className="row">
+                    <motion.div className="col-md-4 text-white mx-3  " initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}>
                         <h4 className="text-white footer-h4 pb-2">Contact Us</h4>
                         <p className="text-white footer-links">
@@ -28,41 +29,42 @@ function Lower_footer() {
                             Email: start@floraison.in
                         </p>
                     </motion.div>
-                    <motion.div className="col-md-2 text-white mx-4 px-4" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
+                    <motion.div className="col-md-2 text-white mx-3 " initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}>
                         <h4 className="text-white footer-h4 pb-2">Our Services</h4>
                         <div className="d-flex flex-column footer-links">
-                            <Link href="/india_entry_strategies" className="text-decoration-none text-white py-1">India Entry Strategies</Link>
-                            <Link href="/india_subsidiary" className="text-decoration-none text-white py-1">India Subsidiary</Link>
-                            <Link href="/subsidiary_support" className="text-decoration-none text-white py-1">Subsidiary Support</Link>
-                            <Link href="/india_peo_services" className="text-decoration-none text-white py-1">India PEO Services</Link>
-                            <Link href="/small_business_support" className="text-decoration-none text-white py-1">Small Business Support</Link>
+                            <Link href="/india-entry-strategies" className="text-decoration-none text-white py-1">India Entry Strategies</Link>
+                            <Link href="/india-subsidiary" className="text-decoration-none text-white py-1">India Subsidiary</Link>
+                            <Link href="/subsidiary-support" className="text-decoration-none text-white py-1">Subsidiary Support</Link>
+                            <Link href="/india-peo-services" className="text-decoration-none text-white py-1">India PEO Services</Link>
+                            <Link href="/small-business-support" className="text-decoration-none text-white py-1">Small Business Support</Link>
                         </div>
                     </motion.div>
-                    <motion.div className="col-md-2 text-white mx-4 px-4" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
+                    <motion.div className="col-md-2 text-white mx-3 " initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}>
                         <h4 className="text-white footer-h4 pb-2">About Us</h4>
                         <div className="d-flex flex-column footer-links">
-                            <Link href="/our_company" className="text-decoration-none text-white py-1">Our Company</Link>
-                            <Link href="/our_leadership" className="text-decoration-none text-white py-1">Our Leadership</Link>
-                            <Link href="/our_execution" className="text-decoration-none text-white py-1">Our Execution</Link>
-                            <Link href="/our_local_expertise" className="text-decoration-none text-white py-1">Local Expertise</Link>
-                            <Link href="/work_with_us" className="text-decoration-none text-white py-1">Work With Us</Link>
+                            <Link href="/our-company" className="text-decoration-none text-white py-1">Our Company</Link>
+                            <Link href="/our-leadership" className="text-decoration-none text-white py-1">Our Leadership</Link>
+                            <Link href="/our-execution" className="text-decoration-none text-white py-1">Our Execution</Link>
+                            <Link href="/our-local-expertise" className="text-decoration-none text-white py-1">Local Expertise</Link>
+                            <Link href="/work-with-us" className="text-decoration-none text-white py-1">Work With Us</Link>
                         </div>
                     </motion.div>
-                    <motion.div className="col-md-2 text-white mx-4 px-4" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
+                    <motion.div className="col-md-2 text-white mx-3 " initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}>
                         <h4 className="text-white footer-h4 pb-2">Others</h4>
                         <div className="d-flex flex-column footer-links">
-                            <Link href="/resources_center" className="text-decoration-none text-white py-1">Resource Center</Link>
-                            <Link href="/contact_us" className="text-decoration-none text-white py-1">Contact Us</Link>
+                            <Link href="/resources-center" className="text-decoration-none text-white py-1">Resource Center</Link>
+                            <Link href="/contact-us" className="text-decoration-none text-white py-1">Contact Us</Link>
                             <Link href="/policy" className="text-decoration-none text-white py-1">Privacy Policy</Link>
                             <Link href="/disclaimer" className="text-decoration-none text-white py-1">Disclaimer</Link>
                         </div>
                     </motion.div>
                 </div>
             </div>
-            <p className="text-white mx-4 px-4 footer-links my-0 py-0">Copyright (c) 2023 Floraison India Strategic Consulting Pvt Ltd, Bangalore, India. All Rights Reserved.</p>
+        </div>
+            <p className="text-white mx-5 px-4 footer-links my-0 py-0">Copyright (c) 2023 Floraison India Strategic Consulting Pvt Ltd, Bangalore, India. All Rights Reserved.</p>
         </div>
     </div>
   )
