@@ -5,6 +5,19 @@
   src: url(../fonts/Segoe-UI-Bold.ttf);
   src: url(../fonts/segoe.ttf);
 }
+.arrow {
+  position: absolute;
+  top: 45%;
+  background: transparent;
+  border: 0px;
+  font-size: 10px;
+}
+.right {
+  right: 15px;
+}
+.left {
+  left: 5px;
+}
 .container-1300{
   max-width: 1300px;
 }
@@ -12,9 +25,14 @@
   margin-top: 4.8rem;
   margin-bottom: 5rem;
 }
+.footer-margin{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 .custom-carousel-item{
   display: flex;
   justify-content: center;
+  margin: auto;
 }
 .custom-container-1200{
   width: 1200px;
@@ -583,14 +601,18 @@
 
 /* Responsiveness */
 @media only screen and (max-width: 600px) {
-  body {
+  body{
       overflow-x: hidden;
   }
   .row-odd {
       flex-direction: column-reverse;
   }
+  .footer-margin{
+    margin: auto;
+  }
   .black-cards-mobile{
       position: static !important;
+      margin: auto;
   }
   .explore-suits-cards{
       width: auto;
@@ -692,10 +714,10 @@
   }
   .custom-container-1140{
     width: 180px;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   }
   .container-900, .container-925, .container-944, .container-404, .container-800, .container-786, .container-1140, .container-1200, .container-1300{
-      overflow-x: hidden;
+      overflow-x: hidden !important;
   }
   .modal-form-body{
       width: auto !important;
@@ -732,5 +754,9 @@
   .modal-header{
       border: none !important;
       height: 0px !important;
+  }
+  .nav-modal-a-padding{
+    padding: auto;
+    margin: auto
   }
 }

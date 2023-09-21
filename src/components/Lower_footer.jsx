@@ -10,7 +10,7 @@ function Lower_footer() {
         <div className='d-flex justify-content-center'>
             <div className="custom-container-1200 ">
                 <div className="row">
-                    <motion.div className="col-md-4 text-white mx-3  " initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
+                    <motion.div className="col-md-4 text-white footer-margin " initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}>
                         <h4 className="text-white footer-h4 pb-2">Contact Us</h4>
                         <p className="text-white footer-links">
@@ -29,7 +29,7 @@ function Lower_footer() {
                             Email: start@floraison.in
                         </p>
                     </motion.div>
-                    <motion.div className="col-md-2 text-white mx-3 " initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
+                    <motion.div className="col-md-2 text-white footer-margin" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}>
                         <h4 className="text-white footer-h4 pb-2">Our Services</h4>
                         <div className="d-flex flex-column footer-links">
@@ -40,7 +40,7 @@ function Lower_footer() {
                             <Link href="/small-business-support" className="text-decoration-none text-white py-1">Small Business Support</Link>
                         </div>
                     </motion.div>
-                    <motion.div className="col-md-2 text-white mx-3 " initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
+                    <motion.div className="col-md-2 text-white footer-margin" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}>
                         <h4 className="text-white footer-h4 pb-2">About Us</h4>
                         <div className="d-flex flex-column footer-links">
@@ -51,7 +51,7 @@ function Lower_footer() {
                             <Link href="/work-with-us" className="text-decoration-none text-white py-1">Work With Us</Link>
                         </div>
                     </motion.div>
-                    <motion.div className="col-md-2 text-white mx-3 " initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
+                    <motion.div className="col-md-2 text-white footer-margin" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}>
                         <h4 className="text-white footer-h4 pb-2">Others</h4>
                         <div className="d-flex flex-column footer-links">

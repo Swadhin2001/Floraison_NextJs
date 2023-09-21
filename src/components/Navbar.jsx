@@ -8,7 +8,7 @@ import Link from 'next/link'
 function Navbar() {
   return (
     <>
-      <div className='sticky-top'>
+      <div className='sticky-top '>
             <div className="d-flex bg-white">
                 <div className="nav-left d-flex align-content-center ">
                     <div>

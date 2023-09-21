@@ -35,7 +35,8 @@ import image31 from '@/assets/ventura.webp'
 import image32 from '@/assets/zebra.webp'
 import image33 from '@/assets/zyme.webp'
 import Image from 'next/image'
-
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
 function Home_slider() {
     const responsive = {
@@ -56,9 +57,21 @@ function Home_slider() {
           items: 1
         }
       };
+      const onClick=()=>{() => onClick()};
+      const CustomRight = ({ onClick }) => (
+        <button className="arrow right" onClick={onClick} >
+          <ArrowForwardIosIcon style={{ fontSize: "30px", color : "black" }} />
+        </button>
+      );
+      const CustomLeft = ({ onClick }) => (
+        <button className="arrow left" onClick={onClick} >
+          <ArrowBackIosIcon style={{ fontSize: "30px", color : "black" }} />
+        </button>
+      );
   return (
     <div>
-        <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={2000} transitionDuration={500} className='custom-container-1140'  removeArrowOnDeviceType={["tablet", "mobile"]} >
+        <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={2000} transitionDuration={500} className='custom-container-1140'  removeArrowOnDeviceType={["tablet", "mobile"]} renderButtonGroupOutside={false}  customRightArrow={<CustomRight />}
+            customLeftArrow={<CustomLeft />}>
             <div >                
                 <Image src={image1} alt="" />                
             </div>
