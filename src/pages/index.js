@@ -20,7 +20,6 @@ import card_image5 from '@/assets/Small-Business-Support.jpg'
 import Link from 'next/link'
 import {motion} from 'framer-motion'
 import Home_slider from '@/components/Home_slider'
-import Home_slider_new from '@/components/Home_slider_new'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -118,7 +117,6 @@ export default function Home() {
             <h4 className="text-center horizontal-slide-h4 m-0 pb-5">Download our ePublications</h4>
             <div className='custom-carousel-item'>
                <Home_slider/>
-               {/* <Home_slider_new/> */}
             </div>
           </div>
       <Footer />
