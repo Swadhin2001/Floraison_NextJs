@@ -417,6 +417,7 @@
 }
 .explore-suits-cards{
   width: 18rem;
+  height: 392px !important;
 }
 .index-horizontal-slide{
   height: 260px;
@@ -470,7 +471,7 @@
 }
 .small-business-card{
   width: auto;
-  min-height: 528px ;
+  height: 528px !important;
 }
 .subsidiadry-support-hero-banner{
   background-position: 0px -80px;
@@ -620,7 +621,7 @@
   }
   .explore-suits-cards{
       width: auto;
-      height: auto;
+      height: auto !important;
       margin: 10px;
   }
   .box-images{
@@ -762,5 +763,9 @@
   .nav-modal-a-padding{
     padding: auto;
     margin: auto
+  }
+  .small-business-card{
+    width: auto;
+    height: auto !important;
   }
 }
