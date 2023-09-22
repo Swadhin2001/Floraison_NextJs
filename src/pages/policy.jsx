@@ -59,7 +59,7 @@ function privacy_policy() {
                 </div>
             </div>
         </motion.div>
-        <Footer/>
+        <Footer policy_active="active-footer"/>
     </>
   )
 }

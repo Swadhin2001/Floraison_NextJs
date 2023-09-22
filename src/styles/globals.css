@@ -149,7 +149,10 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  color: black;
+  color: rgb(0, 0, 0);
+}
+.footer-links a{
+  color : white;
 }
 .our-company-body{
   margin-top: 3rem;
@@ -507,6 +510,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
   margin-left: 50px;
+  color: white;
 }
 .custom-modal {
   position: absolute !important;

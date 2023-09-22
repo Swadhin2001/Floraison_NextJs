@@ -111,7 +111,7 @@ function india_entry_strategies() {
                                   Therefore, you need to clearly evaluate your choices based on your business objective in India, your long-term intent, your employee headcount plans, your budget, etc and make an informed decision.
           </fragment>}/>
         </div>
-        <Footer/>
+        <Footer india_entry_strat_active ="active-footer"/>
     </>
   )
 }

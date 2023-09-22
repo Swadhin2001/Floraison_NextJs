@@ -20,7 +20,7 @@ function our_company() {
       <title>Our Company - Floraison</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
-      <Navbar/>
+      <Navbar our_company_active="active-navbar"/>
       <Herosection banner = {banner}/>
       {/* Body Section */}
       <div className="our-company-body body">
@@ -52,7 +52,7 @@ function our_company() {
             <Our_clientele_slider/>
           </div>
       </div>
-      <Footer/>
+      <Footer our_company_active="active-footer"/>
     </>
   )
 }

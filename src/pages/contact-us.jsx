@@ -16,7 +16,7 @@ function contact_us() {
       <title>Contact Us - Floraison</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
-        <Navbar/>
+        <Navbar contact_us_active="active-navbar"/>
       <Herosection banner = {banner}/>
       {/* Body Section */}
       <div className="my-5 py-5 body-mobile">
@@ -92,7 +92,7 @@ function contact_us() {
             </div>
         </div>
     </div>
-    <Footer/>
+    <Footer contact_us_active="active-footer"/>
     </>
   )
 }

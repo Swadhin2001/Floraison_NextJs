@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import Link from 'next/link'
 
 
-function Navbar() {
+function Navbar(props) {
   return (
     <>
       <div className='sticky-top '>
@@ -46,14 +46,14 @@ function Navbar() {
                      data-bs-dismiss="modal"
                      aria-label="Close"
                  ></button>
-                 <Link href="/index" className="text-decoration-none text-white nav-modal-a-padding nav-hover active-navbar">Home</Link>
-                 <Link href="/our-company" className="text-decoration-none text-white nav-modal-a-padding nav-hover">Our Company</Link>
-                 <Link href="/our-leadership" className="text-decoration-none text-white nav-modal-a-padding nav-hover">Our Leadership</Link>
-                 <Link href="/our-execution" className="text-decoration-none text-white nav-modal-a-padding nav-hover">Our Execution</Link>
-                 <Link href="/our-local-expertise" className="text-decoration-none text-white nav-modal-a-padding nav-hover">Local Expertise</Link>
-                 <Link href="/work-with-us" className="text-decoration-none text-white nav-modal-a-padding nav-hover">Work With Us</Link>
-                 <Link href="/resources-center" className="text-decoration-none text-white nav-modal-a-padding nav-hover">Resources Center</Link>
-                 <Link href="/contact-us" className="text-decoration-none text-white nav-modal-a-padding nav-hover">Contact Us</Link>
+                 <Link href="/index" className={`text-decoration-none nav-modal-a-padding nav-hover ${props.home_active}`}>Home</Link>
+                 <Link href="/our-company" className={`text-decoration-none nav-modal-a-padding nav-hover ${props.our_company_active}`}>Our Company</Link>
+                 <Link href="/our-leadership" className={`text-decoration-none nav-modal-a-padding nav-hover ${props.our_leadership_active}`}>Our Leadership</Link>
+                 <Link href="/our-execution" className={`text-decoration-none nav-modal-a-padding nav-hover ${props.our_execution_active}`}>Our Execution</Link>
+                 <Link href="/our-local-expertise" className={`text-decoration-none nav-modal-a-padding nav-hover ${props.local_expertise_active}`}>Local Expertise</Link>
+                 <Link href="/work-with-us" className={`text-decoration-none nav-modal-a-padding nav-hover ${props.work_active}`}>Work With Us</Link>
+                 <Link href="/resources-center" className={`text-decoration-none nav-modal-a-padding nav-hover ${props.resources_center_active}`}>Resources Center</Link>
+                 <Link href="/contact-us" className={`text-decoration-none nav-modal-a-padding nav-hover ${props.contact_us_active}`}>Contact Us</Link>
              </div>
          </div>
      </div>

@@ -19,7 +19,7 @@ function our_local_expertise() {
       <title>Our Local Expertise - Floraison</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
-    <Navbar/>
+    <Navbar local_expertise_active="active-navbar"/>
       <Herosection banner = {banner}/>
       {/* Body Scetion */}
         <div className="body">
@@ -37,7 +37,7 @@ function our_local_expertise() {
 
             <Image_right image = {image5} image_heading = "Local familiarity, feel, knowledge, expertise and experience is simply a must have" image_about = "Each country has its uniqueness and India is no different. It merely takes a local expert with the familiarity, feel, knowledge and experience to help you understand and navigate you out of any given situation, making you comfortable and stressfree!"/>
         </div>
-        <Footer/>
+        <Footer local_expertise_active="active-footer"/>
     </>
   )
 }

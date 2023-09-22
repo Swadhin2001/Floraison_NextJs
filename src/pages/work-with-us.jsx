@@ -38,7 +38,7 @@ function work_with_us() {
         <title>Work With Us - Floraison</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
-        <Navbar/>
+        <Navbar work_active="active-navbar"/>
         <Herosection banner = {banner}/> 
         <div className="body">
             <div className="text-center mb-5 hidden-up-down">
@@ -160,7 +160,7 @@ function work_with_us() {
             </div>
         </section>
 
-        <Footer/>
+        <Footer work_active="active-footer"/>
     </>
   )
 }

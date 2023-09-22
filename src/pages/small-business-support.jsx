@@ -255,7 +255,7 @@ function small_business_support() {
             </div>
         </div>
 
-        <Footer/>
+        <Footer small_business_active="active-footer"/>
     </>
   )
 }

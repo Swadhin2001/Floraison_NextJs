@@ -37,7 +37,7 @@ function our_leadership() {
       <title>Our Leadership - Floraison</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
-        <Navbar/>
+        <Navbar our_leadership_active="active-navbar"/>
         <Herosection banner = {banner}/> 
         {/* Body Section */}
         <div className="body">
@@ -144,7 +144,7 @@ function our_leadership() {
             </div>
         </div>
 
-        <Footer/>
+        <Footer our_leadership_active_footer="active-footer"/>
     </>
   )
 }

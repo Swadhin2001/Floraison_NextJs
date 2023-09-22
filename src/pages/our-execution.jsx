@@ -19,7 +19,7 @@ function our_execution() {
       <title>Our Execution - Floraison</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
-      <Navbar/>
+      <Navbar our_execution_active="active-navbar"/>
       <Herosection banner={banner} />
       <section className="body">
             <div className="text-center mb-5 hidden-up-down">
@@ -37,7 +37,7 @@ function our_execution() {
             <Image_right image = {image5} image_heading = "Personalised support and realistic expectation" image_about ="We provide personalised support to clients,  often going out of our way when there is a need and delivering value adds wherever we can so that you benefit from our engagement. We set realistic expectations with our clients and believe in being brutally honest with them, if we must. To us, our focus has always been our client success."/>
 
         </section>
-        <Footer/>
+        <Footer our_execution_active="active-footer"/>
     </>
   )
 }

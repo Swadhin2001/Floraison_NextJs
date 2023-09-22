@@ -15,7 +15,7 @@ function resources_center() {
       <title>Resources Center - Floraison</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
-      <Navbar/>
+      <Navbar resources_center_active="active-navbar"/>
       <Herosection banner = {banner}/>
       {/* Body Starts*/}
         <div className="body">
@@ -54,7 +54,7 @@ function resources_center() {
                 </div>
             </div>
         </div>
-        <Footer/>
+        <Footer resources_center_active="active-footer"/>
     </>
   )
 }

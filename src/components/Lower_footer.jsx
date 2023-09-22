@@ -3,7 +3,7 @@ import Link from 'next/link'
 import 'bootstrap/dist/css/bootstrap.css'
 import {motion} from 'framer-motion'
 
-function Lower_footer() {
+function Lower_footer(props) {
   return (
     <div>
       <div className="bg-black lower-footer ">
@@ -33,32 +33,32 @@ function Lower_footer() {
           transition={{ duration: 0.5 }}>
                         <h4 className="text-white footer-h4 pb-2">Our Services</h4>
                         <div className="d-flex flex-column footer-links">
-                            <Link href="/india-entry-strategies" className="text-decoration-none text-white py-1">India Entry Strategies</Link>
-                            <Link href="/india-subsidiary" className="text-decoration-none text-white py-1">India Subsidiary</Link>
-                            <Link href="/subsidiary-support" className="text-decoration-none text-white py-1">Subsidiary Support</Link>
-                            <Link href="/india-peo-services" className="text-decoration-none text-white py-1">India PEO Services</Link>
-                            <Link href="/small-business-support" className="text-decoration-none text-white py-1">Small Business Support</Link>
+                            <Link href="/india-entry-strategies" className={`text-decoration-none text-white py-1 ${props.india_entry_strat_active_footer}`}>India Entry Strategies</Link>
+                            <Link href="/india-subsidiary" className={`text-decoration-none text-white py-1 ${props.india_subsidiary_active_footer}`}>India Subsidiary</Link>
+                            <Link href="/subsidiary-support" className={`text-decoration-none text-white py-1 ${props.subsidiary_support_active_footer}`}>Subsidiary Support</Link>
+                            <Link href="/india-peo-services" className={`text-decoration-none text-white py-1 ${props.india_peo_active_footer}`}>India PEO Services</Link>
+                            <Link href="/small-business-support" className={`text-decoration-none text-white py-1 ${props.small_business_active_footer}`}>Small Business Support</Link>
                         </div>
                     </motion.div>
                     <motion.div className="col-md-2 text-white footer-margin" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}>
                         <h4 className="text-white footer-h4 pb-2">About Us</h4>
                         <div className="d-flex flex-column footer-links">
-                            <Link href="/our-company" className="text-decoration-none text-white py-1">Our Company</Link>
-                            <Link href="/our-leadership" className="text-decoration-none text-white py-1">Our Leadership</Link>
-                            <Link href="/our-execution" className="text-decoration-none text-white py-1">Our Execution</Link>
-                            <Link href="/our-local-expertise" className="text-decoration-none text-white py-1">Local Expertise</Link>
-                            <Link href="/work-with-us" className="text-decoration-none text-white py-1">Work With Us</Link>
+                            <Link href="/our-company" className={`text-decoration-none py-1 ${props.our_company_active_footer}`}>Our Company</Link>
+                            <Link href="/our-leadership" className={`text-decoration-none py-1 ${props.our_leadership_active_footer}`}>Our Leadership</Link>
+                            <Link href="/our-execution" className={`text-decoration-none py-1 ${props.our_execution_active_footer}`}>Our Execution</Link>
+                            <Link href="/our-local-expertise" className={`text-decoration-none py-1 ${props.local_expertise_active_footer}`}>Local Expertise</Link>
+                            <Link href="/work-with-us" className={`text-decoration-none py-1 ${props.work_active_footer}`}>Work With Us</Link>
                         </div>
                     </motion.div>
                     <motion.div className="col-md-2 text-white footer-margin" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}>
                         <h4 className="text-white footer-h4 pb-2">Others</h4>
                         <div className="d-flex flex-column footer-links">
-                            <Link href="/resources-center" className="text-decoration-none text-white py-1">Resource Center</Link>
-                            <Link href="/contact-us" className="text-decoration-none text-white py-1">Contact Us</Link>
-                            <Link href="/policy" className="text-decoration-none text-white py-1">Privacy Policy</Link>
-                            <Link href="/disclaimer" className="text-decoration-none text-white py-1">Disclaimer</Link>
+                            <Link href="/resources-center" className={`text-decoration-none py-1 ${props.resources_center_active_footer}`}>Resource Center</Link>
+                            <Link href="/contact-us" className={`text-decoration-none py-1 ${props.contact_us_active_footer}`}>Contact Us</Link>
+                            <Link href="/policy" className={`text-decoration-none py-1 ${props.policy_active_footer}`}>Privacy Policy</Link>
+                            <Link href="/disclaimer" className={`text-decoration-none py-1 ${props.disclaimer_active_footer}`}>Disclaimer</Link>
                         </div>
                     </motion.div>
                 </div>

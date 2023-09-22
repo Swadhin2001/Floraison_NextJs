@@ -112,7 +112,7 @@ function india_subsidiary() {
                 </div>
             </div>
         </div>
-        <Footer/>
+        <Footer india_subsidiary_active="active-footer"/>
     </>
   )
 }

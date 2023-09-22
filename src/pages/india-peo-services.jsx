@@ -119,7 +119,7 @@ function india_peo_services() {
                 </div>
             </div>
         </div>
-        <Footer/>
+        <Footer india_peo_active="active-footer"/>
     </>
   )
 }

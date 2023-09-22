@@ -26,7 +26,7 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar home_active="active-navbar"></Navbar>
       <Herosection banner={banner} />
       {/* Body Scetion */}
       <section className="body">

@@ -107,7 +107,7 @@ function subsidiary_support() {
                 </div>
             </div>
         </section>
-        <Footer/>
+        <Footer subsidiary_support_active="active-footer"/>
     </>
   )
 }

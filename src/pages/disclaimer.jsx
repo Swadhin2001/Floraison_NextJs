@@ -39,7 +39,7 @@ function Disclaimer() {
             </div>
         </div>
     </motion.div>
-    <Footer/>
+    <Footer disclaimer_active="active-footer"/>
     </>
   )
 }
