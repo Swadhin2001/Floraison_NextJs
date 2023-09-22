@@ -33,11 +33,11 @@ function Lower_footer(props) {
           transition={{ duration: 0.5 }}>
                         <h4 className="text-white footer-h4 pb-2">Our Services</h4>
                         <div className="d-flex flex-column footer-links">
-                            <Link href="/india-entry-strategies" className={`text-decoration-none text-white py-1 ${props.india_entry_strat_active_footer}`}>India Entry Strategies</Link>
-                            <Link href="/india-subsidiary" className={`text-decoration-none text-white py-1 ${props.india_subsidiary_active_footer}`}>India Subsidiary</Link>
-                            <Link href="/subsidiary-support" className={`text-decoration-none text-white py-1 ${props.subsidiary_support_active_footer}`}>Subsidiary Support</Link>
-                            <Link href="/india-peo-services" className={`text-decoration-none text-white py-1 ${props.india_peo_active_footer}`}>India PEO Services</Link>
-                            <Link href="/small-business-support" className={`text-decoration-none text-white py-1 ${props.small_business_active_footer}`}>Small Business Support</Link>
+                            <Link href="/india-entry-strategies" className={`text-decoration-none py-1 ${props.india_entry_strat_active_footer}`}>India Entry Strategies</Link>
+                            <Link href="/india-subsidiary" className={`text-decoration-none py-1 ${props.india_subsidiary_active_footer}`}>India Subsidiary</Link>
+                            <Link href="/subsidiary-support" className={`text-decoration-none py-1 ${props.subsidiary_support_active_footer}`}>Subsidiary Support</Link>
+                            <Link href="/india-peo-services" className={`text-decoration-none py-1 ${props.india_peo_active_footer}`}>India PEO Services</Link>
+                            <Link href="/small-business-support" className={`text-decoration-none py-1 ${props.small_business_active_footer}`}>Small Business Support</Link>
                         </div>
                     </motion.div>
                     <motion.div className="col-md-2 text-white footer-margin" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
