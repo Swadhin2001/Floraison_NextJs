@@ -973,4 +973,8 @@
     height: 100vh !important;
     padding: 0px !important;
   }
+  .nav-modal-a-padding{
+    margin: 10px;
+    text-align: center;
+  }
 }
