@@ -1,15 +1,19 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Image from 'next/image'
 import logo from '@/assets/floraison-logo.svg'
 import 'bootstrap/dist/css/bootstrap.css'
 import Link from 'next/link'
-
+import $ from 'jquery';
 
 function Navbar(props) {
+    useEffect(() => {
+        document.body.style.overflow = 'hidden';
+        document.body.style.overflow = 'auto';
+      }, []);
   return (
     <>
       <div className='sticky-top '>
-            <div className="d-flex bg-white">
+            <div className="d-flex bg-white position-relative">
                 <div className="nav-left d-flex align-content-center ">
                     <div>
                         <Link href="/">
@@ -45,6 +49,7 @@ function Navbar(props) {
                      className="btn-close btn-close-white nav-button fa-2x"
                      data-bs-dismiss="modal"
                      aria-label="Close"
+                     
                  ></button>
                  <Link href="/index" className={`text-decoration-none nav-modal-a-padding nav-hover ${props.home_active}`}>Home</Link>
                  <Link href="/our-company" className={`text-decoration-none nav-modal-a-padding nav-hover ${props.our_company_active}`}>Our Company</Link>

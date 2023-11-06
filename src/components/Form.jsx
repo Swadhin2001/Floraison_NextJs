@@ -8,31 +8,31 @@ function Form() {
     const [phn, setPhn] = useState ("");
     const [about, setAbout] = useState ("");
 
-    const submitbtn =()=>{
+    const submitbtn =(e)=>{
         setAbout("");
         setEmail("");
         setUserName("");
         setPhn("");
         if (username != "" && email != "" && about != "" && phn != ""){
             alert ("Form Submitted Successfully!");
+            e.preventDefault();
+        
+            emailjs.sendForm('service_lx93ifh', 'template_yllq8nq', form.current, 'Y3UVXcCoXI8VTQpSm')
+              .then((result) => {
+                  console.log(result.text);
+                  console.log("success");
+                }, (error) => {
+                    console.log(error.text);
+                    console.log("not success");
+              });
         }
         else{
             alert ("Please fill the form");
         }
     }
 
-    const sendEmail = (e) => {
-        e.preventDefault();
-    
-        emailjs.sendForm('service_lx93ifh', 'template_yllq8nq', form.current, 'Y3UVXcCoXI8VTQpSm')
-          .then((result) => {
-              console.log(result.text);
-              console.log("success");
-            }, (error) => {
-                console.log(error.text);
-                console.log("not success");
-          });
-      };
+    // const sendEmail = (e) => {
+    //   };
     return (
         <div>
             <form>
