@@ -41,8 +41,8 @@ function Navbar(props) {
                 aria-labelledby="navModalLabel"
                 aria-hidden="true"
             >
-                <div className="modal-dialog m-0 custom-modal-dialog" style={{ "paddingTop": "40px" }}>
-                    <div className="modal-content bg-black custom-modal">
+                <div className="modal-dialog m-0 custom-modal-dialog " style={{ "paddingTop": "40px" }}>
+                    <div className="modal-content bg-black custom-modal rounded-0">
                         <div className="modal-body d-flex flex-column">
                             <button
                                 type="button"
