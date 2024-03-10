@@ -49,7 +49,7 @@ Floraison - Accelerating Growth is a website designed to help find the perfect g
 <img width="1710" alt="Screenshot 2024-03-11 at 1 53 59 AM" src="https://github.com/Swadhin2001/Floraison-Accelarating_Growth/assets/95471286/32be816c-e85c-4f44-8492-4bb77e2c7b5e">
 
 
-<img width="1710" alt="Screenshot 2024-03-11 at 1 54 17 AM" src="https://github.com/Swadhin2001/Floraison-Accelarating_Growth/assets/95471286/62622153-b1a8-4ea7-97b5-9852fdd531d3">
+<img width="1710" alt="Screenshot 2024-03-11 at 1 59 36 AM" src="https://github.com/Swadhin2001/Floraison-Accelarating_Growth/assets/95471286/14826ade-e09d-449f-bc26-0eb1392d43bd">
 
 
 <img width="1710" alt="Screenshot 2024-03-11 at 1 54 33 AM" src="https://github.com/Swadhin2001/Floraison-Accelarating_Growth/assets/95471286/d3b17efc-0edf-4c4f-a920-fcfb5b3f9eb9">
