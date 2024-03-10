@@ -70,4 +70,3 @@ This project is set up for deployment on Vercel. Simply connect your Vercel acco
 
 For more detailed information on deploying with Vercel, refer to the [Vercel documentation](https://vercel.com/docs).
 
-```
